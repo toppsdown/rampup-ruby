@@ -5,7 +5,7 @@
 | --- | --- | --- |
 | Abstraction | | Making code easier to write by making it less literal |
 | Algorithm | | Instructions for how to accomplish something |
-| Object | | The Noun of our code. Any "thing" (Array, Number, Boolean)  |
+| Object | | If code were a sentance, objects would be the nouns. Any "thing" (Array, Number, Boolean)  |
 | Precedence | | The order that things happen in |
 | Recursion |  | Repeating a process with a smaller problem |
 
@@ -28,7 +28,7 @@
 ## Tools for abstraction
 | Term | Example | Description |
 | --- | --- | --- |
-| [Function](/explanations/function.md) | DEFINE: `def my_function; end;` USE: `my_function` | The Verbs of our code |
+| [Function](/explanations/function.md) | DEFINE: `def my_function; end;` USE: `my_function` | If code were a sentance, functions would be the Verbs |
 | [Function Argument](/explanations/function.md#arguments) | DEFINE: `def my_function(argument_1, argument_2)`, USE: `my_function(1, 2)` | The objects we give to a function |
 | [Method](/explanations/function.md) | `[1,2,3].length` returns `3`  | Functions called on objects |
 | [Variable](/explanations/variable.md) | `my_age = 27` | saving an object by giving it a name |
