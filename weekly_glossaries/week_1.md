@@ -1,6 +1,5 @@
-| Term | Example | Description |
-| --- | --- | --- |
-|  | | |
+# Week 1 Glossary
+
 ## Concepts
 | Term | Example | Description |
 | --- | --- | --- |
