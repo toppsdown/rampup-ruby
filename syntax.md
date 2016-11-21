@@ -12,7 +12,8 @@ In ruby, there are many parts of the syntax that are not easily searchable on go
 | `>=` | Greater than or Equals | Boolean Comparison |
 | `=>` | Hash Rocket | 1) Assignment in hashes.  2) Denotes return values |
 | `<<` | Shovel | Add to an array |
-| `:` | Semicolon | 1) Symbol creation, 2) Hash assignment |
+| `:` | Colon | 1) Symbol creation, 2) Hash assignment |
+| `;` | Semicolon | Terminates a line |
 | `%` | Modulo | Divides two numbers and gets the remainder |
 | `!` | Not operator | Flips true and false in booleans |
 | `nil` | Represents nothingness | 1) Hashes, 2) Control Flow, 3)
