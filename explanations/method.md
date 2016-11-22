@@ -1,1 +1,3 @@
-number.md
+# Method
+
+[See Function](function.md)
