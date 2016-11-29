@@ -7,7 +7,9 @@ Boolean is the name for true/false
 Any operator that compares two things and returns a boolean
 
 Examples:
+
 `'equal' == 'equal'` returns `true`
+
 `'not equal' == 'nope'` returns `false`
 
 Inequalities:
