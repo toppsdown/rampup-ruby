@@ -17,7 +17,7 @@
 | [Array](/explanations/array.md) | `[ 42, 'text' ]` | A list that starts at 0. Access data with indexes |
 | [Boolean](/explanations/boolean.md) | `true` , `false` | How the computer represents true and false |
 | [Number](/explanations/number.md) | `1`   `2.2` | Same as numbers in math |
-| [String](/explantions/string.md) | `'this is some text'`, `"this is more text"` | Used to store text.  Single and double quotes |
+| [String](/explanations/string.md) | `'this is some text'`, `"this is more text"` | Used to store text.  Single and double quotes |
 
 
 ## Tools
