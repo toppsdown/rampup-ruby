@@ -93,3 +93,7 @@ while my_number != 5      # While the number is not five
   my_number += 2
 end
 ```
+
+## Additional Reading
+[While Loops](https://learnrubythehardway.org/book/ex33.html)
+[Array Loops](https://learnrubythehardway.org/book/ex32.html)

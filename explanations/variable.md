@@ -95,3 +95,10 @@ my_var = my_var - 1  # Now it's equal to 99
 
 my_var += 50  # Now it's equal to 149
 ```
+
+
+## Practice
+[Code Academy](https://www.codecademy.com/en/courses/ruby-beginner-en-d1Ylq/0/3?curriculum_id=5059f8619189a5000201fbcb)
+
+## Additional Reading
+[Learn Ruby The Hard Way](https://learnrubythehardway.org/book/ex4.html)

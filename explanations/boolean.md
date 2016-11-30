@@ -60,8 +60,9 @@ Examples:
 
 `!(1 == 1)` returns `false`
 
-
-
+## Additional Reading
+[Booleans](https://learnrubythehardway.org/book/ex27.html)
+[More practice](https://learnrubythehardway.org/book/ex28.html)
 
 
 

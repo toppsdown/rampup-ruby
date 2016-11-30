@@ -84,3 +84,9 @@ To use it in a different file, you must `require` it
 
 To do:
 ## Method chaining (future)
+
+
+## Additional Reading
+[Basic Functions](https://learnrubythehardway.org/book/ex18.html)
+[Variable and Argument Scoping](https://learnrubythehardway.org/book/ex19.html)
+[Return Values](https://learnrubythehardway.org/book/ex21.html)

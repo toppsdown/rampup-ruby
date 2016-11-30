@@ -29,3 +29,7 @@ With double quotes, we can insert values into a string
 
 ### String interpolation
 Using double quotes, we can
+
+
+## Additional Reading
+[Learn Ruby The Hard Way](https://learnrubythehardway.org/book/ex6.html)

@@ -81,6 +81,9 @@ Index out of range
 
 
 
+## More reading:
+[Code Academy](https://www.codecademy.com/articles/glossary-ruby)
+[Array indexing](https://learnrubythehardway.org/book/ex34.html)
 
 
 

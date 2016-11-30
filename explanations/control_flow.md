@@ -158,3 +158,13 @@ else
   puts 'You are a minor'
 end
 ```
+
+## Practice
+[Code Academy](https://www.codecademy.com/courses/ruby-beginner-en-NFCZ7/0/1?curriculum_id=5059f8619189a5000201fbcb)
+
+## Reading
+[Basic If](https://learnrubythehardway.org/book/ex29.html)
+[If/Else](https://learnrubythehardway.org/book/ex30.html)
+[If/Elsif/Else](https://learnrubythehardway.org/book/ex31.html)
+
+[Functions & Ifs](https://learnrubythehardway.org/book/ex35.html)

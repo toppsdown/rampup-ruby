@@ -22,3 +22,7 @@ If you want decimals, you need to include a decimal `5/3.0` => `1.666666`
 `**`: exponent (example: `8**2` => `64`)
 `to_s`: convert to string (ex: `1234.to_s` => `'1234'`)
 `%`: modulo - divide and get the remainder
+
+
+## Additional Reading
+[Learn Ruby The Hard Way](https://learnrubythehardway.org/book/ex3.html)
