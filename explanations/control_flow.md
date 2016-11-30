@@ -54,7 +54,7 @@ Don't use this.  Just for reading purposes
 
 ## Types of conditionals
 
-#### if/elsif/else:
+### if/elsif/else:
 ```
 if my_age >= 21
   puts 'You can drink'
@@ -66,7 +66,7 @@ end
 ```
 
 
-#### unless:
+### unless:
 Opposite of an if statement.  Only used to make code more like english
 
 These do the same thing
@@ -82,7 +82,7 @@ end
 ```
 
 
-#### case:
+### case:
 When there are many elsifs in your conditional, you may prefer a case
 
 ```
@@ -106,7 +106,7 @@ Everything else is considered `true`
 
 ## Common problems
 
-#### Single `=` instead of double `==`:
+### Single `=` instead of double `==`:
 
 This will always execute because `myage = 21` returns `21` which is [truthy](#truthiness)
 ```
@@ -123,7 +123,7 @@ end
 ```
 
 
-#### Conditions that can never be reached:
+### Conditions that can never be reached:
 ```
 if my_age >= 18
   puts 'You can smoke'
@@ -135,7 +135,7 @@ end
 ```
 
 
-#### Missed cases:
+### Missed cases:
 This code tells us that 0 is a negative number.  That doesn't sound right
 
 ```
@@ -147,7 +147,7 @@ end
 ```
 
 
-#### Wrong conditions:
+### Wrong conditions:
 Make sure you are testing the right thing!
 This code will not allow an 18 year old to smoke or a 21 year old to drink
 
