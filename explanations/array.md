@@ -10,6 +10,7 @@ A list.  Can put any type of data in the array.  Things in an array are called "
 | Index | The location of an item in the array |
 | 0 Indexing | List index starts at 0 |
 | Item/Element | A thing in an array |
+| Traversing | Going through a whole array |
 
 ## Syntax rules
 Each things is separated by a comma

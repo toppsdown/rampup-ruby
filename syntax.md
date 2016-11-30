@@ -17,7 +17,7 @@ In ruby, there are many parts of the syntax that are not easily searchable on go
 | `%` | Modulo | Divides two numbers and gets the remainder |
 | `!` | Not operator | Flips true and false in booleans |
 | `nil` | Represents nothingness | 1) Hashes, 2) Control Flow, 3)
-| `[]` | Square Brackets | 1) Arrays,
+| `[]` | Square Brackets | 1) Arrays, 2) Hash keys
 | `{}` | Curly Braces | 1) Hashes, 2) Blocks
 | `()` | Parentheses | 1) Precedence, 2) Function definition and use
 | `#{}` | String Interpolation | 1) Strings

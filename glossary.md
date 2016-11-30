@@ -25,7 +25,7 @@
 | --- | --- | --- |
 | [Boolean Comparison](/explanations/boolean.md#boolean-comparisons) | `1 == 1` returns `true`, `'text'==2` returns `false` |  Equalities and inequalities |
 | [Boolean Operator](/explanations/boolean.md#boolean-operators) | AND: `1==1 && 2==2` returns `true` OR: `1==1 || 'text'==2` returns `true` | Combines boolean comparisons |
-| - [Control Flow](/explanations/control_flow.md) | `puts 'equal' if 1==1` | How to teach the computer to make decisions |
+| [Control Flow](/explanations/control_flow.md) | `puts 'equal' if 1==1` | How to teach the computer to make decisions |
 | [Conditional](/explanations/control_flow.md) | | [Control Flow](/explanations/control_flow.md) |
 
 ## Tools for abstraction
@@ -35,5 +35,5 @@
 | [Function Argument](/explanations/function.md#arguments) | DEFINE: `def my_function(argument_1, argument_2)`, USE: `my_function(1, 2)` | The objects we give to a function |
 | [Method](/explanations/function.md) | `[1,2,3].length` returns `3`  | Functions called on objects |
 | [Variable](/explanations/variable.md) | `my_age = 27` | saving an object by giving it a name |
-| - [While Loop](/explanations/while_loop.md) | `while _condition_` | Repeat a set of instructions until condition is false |
+| [While Loop](/explanations/loop.md#while_loop) | `while _condition_` | Repeat a set of instructions until condition is false |
 
