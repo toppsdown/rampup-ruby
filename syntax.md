@@ -24,3 +24,5 @@ In ruby, there are many parts of the syntax that are not easily searchable on go
 | `\` | Backslash | 1) String escaping,
 | `/` | Forward Slash | 1) Division (math)
 | `end` | Closing end | 1) Functions, 2) Loops, 3) Blocks
+| `?` | Question mark | 1) Function names, 2) Ternary conditionals
+| `!` | Bang | 1) Function names

@@ -33,6 +33,16 @@ end
 ## Naming conventions
 Functions are all lowercase.  If multiple words, connect with underscores
 
+If your function is answering a question, it is common to name it with a question mark
+
+```
+def is_ethan?(name)
+  name == 'Ethan'
+end
+```
+
+If your function changes state, it is common to name it with an exclamation point (Don't worry about this for now)
+
 ## How to call (use) a function
 To call a function, just use it's name: `tell_me_i_am_awesome`
 output: `you are awesome`

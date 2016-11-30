@@ -11,10 +11,11 @@ When we want to reference something in many different places in our code, we nee
 
 
 ## Syntax rules
+Can use any numbers or letters, but not punctuation
+
 variables with multiple-part names are separated by underscores
 
 `this_is_a_long_variable_name`
-
 
 
 ## Assigning
