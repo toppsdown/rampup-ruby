@@ -14,7 +14,8 @@ This is how computers make decisions.  We give them a flow to follow
 
 ## Syntax rules
 ### Multiline Conditional
-Multiline conditionals must have an `end`.  The `end` closes the conditional.  If you forget to put `end`, you will get an error like this:
+Multiline conditionals must have an `end`.  The `end` closes the conditional.    
+If you forget to put `end`, you will get an error like this:
 
 `SyntaxError: (irb):7: syntax error, unexpected tSTRING_DEND, expecting keyword_end`
 
@@ -47,8 +48,7 @@ end
 
 
 ### Ternary Conditional
-Don't use this.  Just for reading purposes
-
+Don't use this.  Just for reading purposes  
 `my_var > 9000 ? puts 'HIS POWER LEVEL IS OVER 9000!' : puts 'You are weak!'`
 
 
@@ -67,8 +67,7 @@ end
 
 
 ### unless:
-Opposite of an if statement.  Only used to make code more like english
-
+Opposite of an if statement.  Only used to make code more like english  
 These do the same thing
 
 ```
@@ -99,8 +98,7 @@ end
 [More reading on case statements](http://www.skorks.com/2009/08/how-a-ruby-case-statement-works-and-what-you-can-do-with-it/)
 
 ## Truthiness
-There are only two things that the computer thinks are false: `false` and `nil`
-
+There are only two things that the computer thinks are false: `false` and `nil`  
 Everything else is considered `true`
 
 
@@ -148,7 +146,7 @@ end
 
 
 ### Wrong conditions:
-Make sure you are testing the right thing!
+Make sure you are testing the right thing!  
 This code will not allow an 18 year old to smoke or a 21 year old to drink
 
 ```
