@@ -14,7 +14,8 @@ This is how computers make decisions.  We give them a flow to follow
 
 ## Syntax rules
 ### Multiline Conditional
-Multiline conditionals must have an `end`.  The `end` closes the conditional.  If you forget to put `end`, you will get an error like this:
+Multiline conditionals must have an `end`.  The `end` closes the conditional.    
+If you forget to put `end`, you will get an error like this:
 
 `SyntaxError: (irb):7: syntax error, unexpected tSTRING_DEND, expecting keyword_end`
 
