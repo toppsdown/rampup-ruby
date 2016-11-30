@@ -14,8 +14,8 @@ This is how computers make decisions.  We give them a flow to follow
 
 ## Syntax rules
 ### Multiline Conditional
-Multiline conditionals must have an `end`.  The `end` closes the conditional
-If you forget to put `end`, you will get an error like this:
+Multiline conditionals must have an `end`.  The `end` closes the conditional.  If you forget to put `end`, you will get an error like this:
+
 `SyntaxError: (irb):7: syntax error, unexpected tSTRING_DEND, expecting keyword_end`
 
 Please indent your code so that if/else/end are aligned, and the internal conditions are aligned
@@ -48,12 +48,13 @@ end
 
 ### Ternary Conditional
 Don't use this.  Just for reading purposes
+
 `my_var > 9000 ? puts 'HIS POWER LEVEL IS OVER 9000!' : puts 'You are weak!'`
 
 
 ## Types of conditionals
 
-**if/elsif/else:**
+#### if/elsif/else:
 ```
 if my_age >= 21
   puts 'You can drink'
@@ -64,7 +65,8 @@ else
 end
 ```
 
-**unless:**
+
+#### unless:
 Opposite of an if statement.  Only used to make code more like english
 
 These do the same thing
@@ -79,7 +81,8 @@ unless my_age < 21
 end
 ```
 
-**case:**
+
+#### case:
 When there are many elsifs in your conditional, you may prefer a case
 
 ```
@@ -102,9 +105,10 @@ Everything else is considered `true`
 
 
 ## Common problems
-**single = instead of double:**
 
-This will always execute because `myage = 21` returns `21` which is [truthy]('#Truthiness')
+#### Single `=` instead of double `==`:
+
+This will always execute because `myage = 21` returns `21` which is [truthy](#truthiness)
 ```
 if my_age = 21
   puts 'You are 21'
@@ -118,7 +122,8 @@ if my_age == 21
 end
 ```
 
-**conditions that can never be reached:**
+
+#### Conditions that can never be reached:
 ```
 if my_age >= 18
   puts 'You can smoke'
@@ -129,7 +134,8 @@ else
 end
 ```
 
-**Missed cases:**
+
+#### Missed cases:
 This code tells us that 0 is a negative number.  That doesn't sound right
 
 ```
@@ -140,7 +146,8 @@ else
 end
 ```
 
-**Wrong conditions:**
+
+#### Wrong conditions:
 Make sure you are testing the right thing!
 This code will not allow an 18 year old to smoke or a 21 year old to drink
 
