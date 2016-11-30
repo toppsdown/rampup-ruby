@@ -57,6 +57,11 @@ Hey Dwayne Johnson
 You are so awesome
 ```
 
+## Scope
+The arguments given to a function, and the variables created inside a function are only available to that function.
+When you define a function, it is only available to the file it is in.
+To use it in a different file, you must `require` it
+
 
 ## Example of abstracting with a function
 
