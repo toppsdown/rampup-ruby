@@ -35,5 +35,5 @@
 | [Function Argument](/explanations/function.md#arguments) | DEFINE: `def my_function(argument_1, argument_2)`, USE: `my_function(1, 2)` | The objects we give to a function |
 | [Method](/explanations/function.md) | `[1,2,3].length` returns `3`  | Functions called on objects |
 | [Variable](/explanations/variable.md) | `my_age = 27` | saving an object by giving it a name |
-| [While Loop](/explanations/loop.md#while_loop) | `while _condition_` | Repeat a set of instructions until condition is false |
+| [While Loop](/explanations/loop.md#while-loop) | `while _condition_` | Repeat a set of instructions until condition is false |
 
