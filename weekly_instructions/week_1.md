@@ -34,12 +34,13 @@ Repl.it is a great resource for writing code on the web
 9) On the interactive side, try typing: `puts 'Hello New Student'` and hitting enter  
 
 ### Sign up for Slack
-Slack is a great instant messaging platform for developers  
+Slack is a great instant messaging platform for developers.  I am always accessible via slack so feel free to message me anytime  
 
 To set up:  
 1) You should receive an email to join the "siparttime" Slack Team  
 2) Follow the instructions  
 3) Email me if you have problems  
+4) Once you're in, join the 'sibos_ruby_dec16' team and say hi!
 
 
 ### Read [weekly glossary](/weekly_glossaries/week_1.md)
