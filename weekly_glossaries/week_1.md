@@ -7,7 +7,7 @@ This will also be your reference guide for the class
 ## Prework
 1) Read through entire glossary.  Don't worry about understanding  
 2) Starting with the Data Types, click the link and read through the summary  
-3) In each summary, there are examples and exercises.  Read through the examples and try the exercises  
+3) In each summary, there are examples.  Read through the examples and try them out in Repl.it
 4) Once you are done with Data Types, move on to Tools, then Tools for Abstraction
 
 
