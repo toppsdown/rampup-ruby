@@ -1,6 +1,9 @@
 # Week 1 Instructions
 
 ## Pre Work
+### 0. Fill out the [survey](https://fundies.typeform.com/to/nWenNm)
+This will help me customize the curriculum to you!
+
 ### 1. Sign up for github
 Github is *the place* for programming  
 Developers use github to work together
