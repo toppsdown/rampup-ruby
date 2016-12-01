@@ -43,4 +43,4 @@ To set up:
 3.4) Once you're in, join the 'sibos_ruby_dec16' team and say hi!
 
 
-### 4. Read [weekly glossary](/weekly_glossaries/week_1.md)
+### 4. Read [weekly 1 glossary](/weekly_glossaries/week_1.md)
