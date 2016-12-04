@@ -32,17 +32,13 @@ end
 
 ### Inline conditional
 ```
-def say_hi_only_to_ethan(user_name)
-  puts 'Hi' if user_name == 'Ethan'
-end
+puts 'Hi' if user_name == 'Ethan'
 ```
 
 Exactly the same as:
 ```
-def say_hi_only_to_ethan(user_name)
-  if user_name == 'Ethan'
-    puts 'Hi'
-  end
+if user_name == 'Ethan'
+  puts 'Hi'
 end
 ```
 

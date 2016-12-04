@@ -14,9 +14,11 @@ A loop is how we tell a computer to repeat something
 
 # While Loop
 ## Syntax rules
-While loops require a condition to test that is created outside of the loop, and modified inside of it  
-The while loop code stops with an `end`  
-The condition must have a stopping point, or it will run infinitely
+While loops require:  
+1) a condition to test that is created outside of the loop  
+2) modifification to the condition inside of the loop  
+3) A point when the condition becomes "false" (terminating condition)  
+4) The while loop code stops with an `end`  
 
 ```
 my_number = 0              # Starting state of the condition

@@ -72,6 +72,7 @@ The arguments given to a function, and the variables created inside a function a
 When you define a function, it is only available to the file it is in.
 To use it in a different file, you must `require` it
 
+See [Scope](explanations/scope.md)
 
 ## Example of abstracting with a function
 
