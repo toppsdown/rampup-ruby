@@ -39,7 +39,7 @@ variables with multiple-part names are separated by underscores
 ### Scoping
 Variables are only available in the area that you defined them
 
-See: [Scoping](explanations/scope.md)
+See: [Scoping](scope.md)
 
 
 ### Variable unassigned
