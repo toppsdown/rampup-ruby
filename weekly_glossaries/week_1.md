@@ -17,7 +17,7 @@ This will also be your reference guide for the class
 | Abstraction | | Making code easier to write by making it less literal |
 | Algorithm | | Instructions for how to accomplish something |
 | Object | | If code were a sentance, objects would be the nouns. Any "thing" (Array, Number, Boolean)  |
-| Precedence | | The order that things happen in |
+| [Precedence](/explanations/precedence.md) | | The order that computer reads code |
 | Recursion |  | Repeating a process with a smaller problem |
 
 ## Data types
