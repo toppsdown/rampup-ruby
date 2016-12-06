@@ -1,9 +1,7 @@
 # Week 1 Instructions
 
-Table of Contents
-=================
-
-   * [Week 1 Instructions](#week-1-instructions)
+## Table of Contents
+  * [Week 1 Instructions](#week-1-instructions)
       * [Pre Work](#pre-work)
          * [0. Fill out the <a href="https://fundies.typeform.com/to/nWenNm">survey</a>](#0-fill-out-the-survey)
          * [1. Sign up for github](#1-sign-up-for-github)
