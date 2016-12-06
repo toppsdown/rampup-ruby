@@ -47,3 +47,92 @@ To set up:
 
 
 ### 4. Read [glossary for week 1](/weekly_glossaries/week_1.md)
+
+## In class exercises
+Still to come
+
+## Homework
+### 1. Sum Array
+Go to https://repl.it/EhIS/2
+
+1.1 ) Sum all numbers in array
+Using what you learned in class, write a function that takes an array of numbers returns the sum
+When you run it, all 3 tests should print out "Great Job!"
+
+1.2) Only sum odd numbers
+1.3) Only sum numbers > 10
+
+  
+  
+### 2. Read this code
+Read the following code. Make sure you understand every piece.  Play with it in Repl.it.  Google search for anything you don't know.  If there's something you don't understand and can't find on google message me in slack and make a note of it so that we can discuss it in class
+
+
+**NOTE:** All of these functions can take strings or arrays  
+
+1) Write a summary of what each function does  
+2) Explain in your own words how the function works
+
+**Reading 1:**
+```
+# Can take a string or array
+def some_function(given_string)
+  i = 0
+  output = ''
+
+  while i < given_string.length
+    output += given_string[i * -1 - 1]
+    i += 1
+  end
+
+  return output
+end
+```
+**HINTS: Strings have indexes like arrays.  Both have negative indexes**
+
+
+**Reading 2:**
+```
+# Can take a string or array
+def some_func_2(given_string)
+  if given_string.length <= 1
+  	return true
+  else
+  	if given_string[0] == given_string[-1]
+  		return some_func_2(given_string[1..-1])
+  	else
+  		return false
+  	end
+  end
+end
+```
+
+**Reading 3:**
+```
+# Can take a string or array
+def some_func_3(given_string)
+	answer = true
+	while given_string.length >	1 && answer == true
+		if given_string[0] == given_string[-1]
+			given_string = given_string[1..-2]
+		else
+			answer = false
+		end
+	end	
+	
+	return answer
+end
+```
+
+### 3. Precedence
+Read the following code.  Using the precedence table, write out each step the computer takes when reading the code
+[Precedence table](https://www.techotopia.com/index.php/Ruby_Operator_Precedence)
+
+```
+
+
+```
+
+
+
+
