@@ -1,4 +1,4 @@
-# Week 1 Glossary
+# Week 2 Glossary
 
 ## How to approach this learning
 These are the things we are going to discuss in the first class.  Don't worry about understanding everything.  This is just to prime your brain for learning in class.
