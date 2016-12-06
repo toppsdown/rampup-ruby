@@ -50,9 +50,9 @@ get_item("B2", vending_machine_mapping)  #returns "Cheetos"
 6) Hashes can be over multiple lines as long as there is a comma at the end of each line  
   
 ## WARNING: Understanding the Hash Rocket
-Hash rockets have two meanings:
-  1) Assignment in a hash
-  2) When explaining code, writers will use `=>` to denote return values
+Hash rockets have two meanings:  
+  1) Assignment in a hash  
+  2) When explaining code, writers will use `=>` to denote return values  
 
 **Example:**
 ```
@@ -77,8 +77,8 @@ hash_with_many_types = {
 ```
 
 ### When key is a symbol
-Symbols are static names.  See [Symbol](/explanations/symbol.md) for more details.
-There is a shortcut for symbols.  The following do the exact same thing.  It just makes things look prettier
+Symbols are static(unchanging) names.  See [Symbol](/explanations/symbol.md) for more details.  
+There is a shortcut for using symbols as keys.  The following do the exact same thing.  It just makes things look prettier
 
 `{ :age => 175 }` Is the same as `{ age: 175 }`
 
