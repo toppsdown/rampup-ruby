@@ -4,6 +4,7 @@ In ruby, there are many parts of the syntax that are not easily searchable on go
 
 | Symbol | Name | Possible Uses |
 | --- | --- | --- |
+| `#` | Comment | Anything written after this is ignored by the computer|
 | `\|` | Pipe | 1) Boolean OR (`||`), 2) Bitwise Operator, 3) Blocks |
 | `&` | Ampersand | 1) Boolean AND (`&&`), 2) Bitwise Operator |
 | `=` | Equals | Variable assignment |
