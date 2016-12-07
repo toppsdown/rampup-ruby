@@ -66,6 +66,14 @@ To set up:
 Still to come
 
 ## Homework
+
+### Submission:
+Email me all of the code that you create as part of the homework.  
+Don't worry if it's incorrect, you're not being graded, this is purely about your own learning  
+Feel free to ask for help and share knowledge from fellow students and from me via slack  
+  
+If you want more work, let me know
+
 ### 1. Sum Array
 Go to https://repl.it/EhIS/2
 
@@ -84,8 +92,9 @@ Read the following code. Make sure you understand every piece.  Play with it in 
 
 **NOTE:** All of these functions can take strings or arrays  
 
-1) Write a summary of what each function does  
-2) Explain in your own words how the function works
+1) Use the [precedence table](https://www.techotopia.com/index.php/Ruby_Operator_Precedence) to manually evaluate the code below
+2) Write a summary of what each function does  
+3) Explain in your own words how the function works
 
 **Reading 1:**
 ```
@@ -126,6 +135,7 @@ end
 # Can take a string or array
 def some_func_3(given_string)
 	answer = true
+
 	while given_string.length >	1 && answer == true
 		if given_string[0] == given_string[-1]
 			given_string = given_string[1..-2]
@@ -138,15 +148,35 @@ def some_func_3(given_string)
 end
 ```
 
-### 3. Precedence
-Read the following code.  Using the precedence table, write out each step the computer takes when reading the code
-[Precedence table](https://www.techotopia.com/index.php/Ruby_Operator_Precedence)
+### 3. Learn something new
+Replace the while loop below with a for loop  
+Notes:
+- You will have to google for how to use a for loop
+- You will have to change how the answer is created and changed
 
+```
+# Can take a string or array
+def some_func_3(given_string)
+  answer = true
+
+  while given_string.length > 1 && answer == true
+    if given_string[0] == given_string[-1]
+      given_string = given_string[1..-2]
+    else
+      answer = false
+    end
+  end  
+  
+  return answer
+end
 ```
 
 
-```
-
+### 4. Extra credit
+Same as exercise 3, but use an iterator instead of a loop
+Hints:
+- You don't know what an iterator is.  Google it
+- The most common ones are `each` and `map`
 
 
 
