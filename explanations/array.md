@@ -59,6 +59,7 @@ Use square brackets to access the item you want
 Index out of range
 
 ## Common methods
+[**length**](https://ruby-doc.org/core-2.2.0/Array.html#method-i-length)  
 `[1,2,3].length` returns 3
 
 `['hello', 'goodbye'].include?('hello')` returns `true`
