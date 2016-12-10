@@ -7,7 +7,7 @@
          * [1. Sign up for github](#1-sign-up-for-github)
          * [2. Sign up for Repl.it](#2-sign-up-for-replit)
          * [3. Sign up for Slack](#3-sign-up-for-slack)
-         * [4. Read <a href="/weekly_glossaries/week_1.md">glossary for week 1</a>](#4-read-glossary-for-week-1)
+         * [4. Read glossary for week 1](#4-read-glossary-for-week-1)
       * [In class exercises](#in-class-exercises)
       * [Homework](#homework)
          * [1. Sum Array](#1-sum-array)
