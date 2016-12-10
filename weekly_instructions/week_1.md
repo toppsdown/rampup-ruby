@@ -68,17 +68,17 @@ To set up:
 
 ### Exercise A: Check for ingredients
 1) Write out the steps for checking if we have the right ingredients  
-Necessary Topics:  
-Problem solving framework
+Required Topics:  
+- Problem solving framework
 
 [Answer](/weekly_exercises/week_1/A_1.md)  
 
 2) Convert steps into code  
-Necessary Topics:  
-Array Indexes  
-Booleans  
-Boolean Comparisons  
-Boolean Or Operator  
+Required Topics:  
+- Array Indexes  
+- Booleans  
+- Boolean Comparisons  
+- Boolean Or Operator  
 
 [Answer](/weekly_exercises/week_1/A_2.rb)  
 
@@ -92,7 +92,7 @@ What does this return?  What should it return?
 Find the error using the [Precedence table](https://www.techotopia.com/index.php/Ruby_Operator_Precedence)  
 
 Required Topics:  
-Precedence  
+- Precedence  
 
 Starting code:  
 ```
@@ -111,8 +111,8 @@ Starting code:
 [Starting Code](/weekly_exercises/week_1/C_0.rb)  
 
 Required Topics:  
-Control Flow  
-`puts` (Strings)  
+- Control Flow  
+- `puts` (Strings)  
 
 [Answer](/weekly_exercises/week_1/C_1.rb)  
 
@@ -125,14 +125,14 @@ Control Flow
 [Starting State](/weekly_exercises/week_1/D_0.rb)  
 
 1) Change your code to use while loops  
-Necessary Topics:  
-While Loops  
+Required Topics:  
+- While Loops  
 
 [Answer](/weekly_exercises/week_1/D_1.rb)  
 
 2) Change your code to allow any length of inventory  
-Necessary Topics:  
-Array Methods  
+Required Topics:  
+- Array Methods  
 
 [Answer](/weekly_exercises/week_1/D_2.rb)  
 
