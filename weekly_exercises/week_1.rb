@@ -14,6 +14,7 @@
     ### 3.1.1) Check first item in inventory to see if peanut butter
     ### 3.1.2) Chech second item in inventory to see if peanut butter
     ### 3.1.3) etc...
+    ### 3.1.4) Combine with OR operator (||)
 
 ['peanut butter', 'pickles', 'jelly'][0] == 'peanut butter' ||
 ['peanut butter', 'pickles', 'jelly'][1] == 'peanut butter' ||
@@ -44,10 +45,10 @@ has_peanut_butter && has_jelly && has_bread
 
 
 # Exercise B: Showing Precedence
-['bread', 'peanut butter'][0] =='bread' ||
-['bread', 'peanut butter'][1] =='bread' &&
-['bread', 'peanut butter'][0] =='jelly' ||
-['bread', 'peanut butter'][1] =='jelly'
+['bread', 'peanut butter'][0] == 'bread' ||
+['bread', 'peanut butter'][1] == 'bread' &&
+['bread', 'peanut butter'][0] == 'jelly' ||
+['bread', 'peanut butter'][1] == 'jelly'
 
 # Render array indexes
 'bread' == 'bread' ||

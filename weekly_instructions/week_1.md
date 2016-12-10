@@ -63,7 +63,89 @@ To set up:
 ### 4. Read [glossary for week 1](/weekly_glossaries/week_1.md)
 
 ## In class exercises
-Still to come
+[Slides](toppy42.github.io/slide_nav/slides/Week_1.html)
+
+
+### Exercise A: Check for ingredients
+1) Write out the steps for checking if we have the right ingredients  
+Necessary Topics:  
+Problem solving framework
+
+[Answer](/weekly_exercises/week_1/A_1.md)  
+
+2) Convert steps into code  
+Necessary Topics:  
+Array Indexes  
+Booleans  
+Boolean Comparisons  
+Boolean Or Operator  
+
+[Answer](/weekly_exercises/week_1/A_2.rb)  
+
+3) Abstract with Variables  
+[Answer](/weekly_exercises/week_1/A_3.rb)  
+
+### Exercise B: Precedence  
+1) Find the error in this code by evaluating the code like a computer  
+
+What does this return?  What should it return?
+Find the error using the [Precedence table](https://www.techotopia.com/index.php/Ruby_Operator_Precedence)  
+
+Required Topics:  
+Precedence  
+
+Starting code:  
+```
+['bread', 'peanut butter'][0] == 'bread' ||
+['bread', 'peanut butter'][1] == 'bread' &&
+['bread', 'peanut butter'][0] == 'jelly' ||
+['bread', 'peanut butter'][1] == 'jelly'  
+```
+[Answer](/weekly_exercises/week_1/B_1.md)  
+
+## Exercise C: Control Flow  
+1) Write an if statement
+  - if we have the right ingredients in our inventory, print out "You can make a PBJ!"  
+  - if we do not have the right ingredients, print out "Go to the store"  
+
+[Starting Code](/weekly_exercises/week_1/C_0.rb)  
+
+Required Topics:  
+Control Flow  
+`puts` (Strings)  
+
+[Answer](/weekly_exercises/week_1/C_1.rb)  
+
+2) Test your code  
+  - Change your inventory to not have the right ingredients.  Does it print the right sentence?  
+  - Change your inventory to have the right ingredients.  Does it print the right sentence?  
+
+
+## Exercise D: While Loop  
+[Starting State](/weekly_exercises/week_1/D_0.rb)  
+
+1) Change your code to use while loops  
+Necessary Topics:  
+While Loops  
+
+[Answer](/weekly_exercises/week_1/D_1.rb)  
+
+2) Change your code to allow any length of inventory  
+Necessary Topics:  
+Array Methods  
+
+[Answer](/weekly_exercises/week_1/D_2.rb)  
+
+## Exercise E: Functions
+1) Write a function that takes an inventory array as an argument and tells us if there is peanut butter in it  
+[Answer](/weekly_exercises/week_1/E_1.rb)  
+
+2) Write a general function that takes an inventory and an item and checks if the item is in the inventory  
+[Answer](/weekly_exercises/week_1/E_2.rb)  
+
+3) Use the general function to clean up the code from exercise D  
+[Answer](/weekly_exercises/week_1/E_3.rb)  
+
 
 ## Homework
 
