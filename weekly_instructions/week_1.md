@@ -168,6 +168,7 @@ A) inequalities: type these into repl.it to see what they output
   - `10 < 20`  
   - `'hello' != 'hello'`  
   - `(50 / 2) >= 25`  
+  
 B) operators:  use repl to see what each of these returns  
   - `10 > 5 && 10 < 20`  
   - `10 < 5 && 10 < 20`  
@@ -196,11 +197,15 @@ HINT: use the modulo operator `%` to determine if odd or even
 
 ### 4. While loop
 A) Write a while loop that prints something 10 times  
+
 B) Use `gets` to ask the user and print something that number of times  
+
 C) Sum an array  
   - Example: `[2, 4, 10]` should return `16`  
+
 D) Sum only the even numbers in an array  
   - Example: `[2, 5, 8, 17]` should return `10`  
+
 E) Sum numbers greater than 10  
   - Example: `[5, 100, 9, 4]` should return `18`  
   
@@ -208,6 +213,7 @@ E) Sum numbers greater than 10
 ### 5. Complex control flow
 A) Convert [this flow chart](https://ih0.redbubble.net/image.32643010.3931/flat,550x550,075,f.jpg) into a program  
   - Ask the user a yes/no question at each decision point to naviage the flow  
+
 B) Write a program that asks for a users age and the state they live in and tells them what rights they have  
   - Drinking  
   - Smoking  
@@ -222,9 +228,9 @@ Read the following code. Make sure you understand every piece.  Play with it in 
 
 **NOTE:** All of these functions can take strings or arrays  
 
-1) Use the [precedence table](https://www.techotopia.com/index.php/Ruby_Operator_Precedence) to manually evaluate the code below  
-2) Write a summary of what each function does  
-3) Explain in your own words how the function works  
+A) Use the [precedence table](https://www.techotopia.com/index.php/Ruby_Operator_Precedence) to manually evaluate the code below  
+B) Write a summary of what each function does  
+C) Explain in your own words how the function works  
 
 **Reading 1:**  
 ```
