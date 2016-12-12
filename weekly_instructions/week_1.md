@@ -196,6 +196,8 @@ HINT: use the modulo operator `%` to determine if odd or even
 
 
 ### 4. While loop
+[Basic Usage](https://github.com/toppy42/rampup-ruby/blob/master/explanations/loop.md#syntax-rules)  
+
 A) Write a while loop that prints something 10 times  
 
 B) Use `gets` to ask the user and print something that number of times  
