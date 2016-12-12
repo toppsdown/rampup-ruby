@@ -31,5 +31,8 @@ This will also be your reference guide for the class
 ## Tools for abstraction
 | Term | Example | Description |
 | --- | --- | --- |
+| [Function](/explanations/function.md) | DEFINE: `def my_function; end;` USE: `my_function` | If code were a sentance, functions would be the Verbs |
+| [Function Argument](/explanations/function.md#arguments) | DEFINE: `def my_function(argument_1, argument_2)`, USE: `my_function(1, 2)` | The objects we give to a function |
+| [Method](/explanations/function.md) | `[1,2,3].length` returns `3`  | Functions called on objects |
 | [For Loop](/explanations/for_loop.md) | `for number in [1,2,3,4]` | Repeat some operation for each item in an array or hash |
 
