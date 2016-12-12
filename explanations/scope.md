@@ -36,3 +36,7 @@ but cannot access: `internal_var_1, argument_1, internal_var_2, argument_2`
 **can access:** `internal_var_2, argument_2`  
 **cannot access:** `external_var, internal_var_1, argument_2`
 
+
+## More reading:
+https://www.sitepoint.com/understanding-scope-in-ruby/
+
