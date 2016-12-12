@@ -2,7 +2,7 @@
 
 
 ## What's the difference?
-You define a function in a file and you can use it in that file
+You define a function in a file and you can use it in that file  
 You define a method on an object (like an array), then you can use it on the array (`[1,2,3].include?(3)`)
 
 **NOTE: You do not know how to define methods yet**
