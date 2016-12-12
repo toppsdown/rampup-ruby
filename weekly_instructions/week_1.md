@@ -165,19 +165,19 @@ A) `['a', 'b', 'c', 'd', 'e']`
 
 ### 2. Booleans
 A) inequalities: type these into repl.it to see what they output  
-  - 10 < 20  
-  - 'hello' != 'hello'  
-  - (50 / 2) >= 25  
+  - `10 < 20`  
+  - `'hello' != 'hello'`  
+  - `(50 / 2) >= 25`  
 B) operators:  use repl to see what each of these returns  
-  - 10 > 5 && 10 < 20  
-  - 10 < 5 && 10 < 20  
-  - 10 > 5 && 10 > 20  
-  - 10 > 5 && 10 < 20  
+  - `10 > 5 && 10 < 20`  
+  - `10 < 5 && 10 < 20`  
+  - `10 > 5 && 10 > 20`  
+  - `10 > 5 && 10 < 20`  
   
-  - 10 > 5 || 10 < 20  
-  - 10 < 5 || 10 < 20  
-  - 10 > 5 || 10 > 20  
-  - 10 > 5 || 10 < 20  
+  - `10 > 5 || 10 < 20`  
+  - `10 < 5 || 10 < 20`  
+  - `10 > 5 || 10 > 20`  
+  - `10 > 5 || 10 < 20`  
 
 ### 3. Control flow
 Get input from the user:
@@ -196,7 +196,7 @@ HINT: use the modulo operator `%` to determine if odd or even
 
 ### 4. While loop
 A) Write a while loop that prints something 10 times  
-B) Use `gets` to ask the user and print something that number of times
+B) Use `gets` to ask the user and print something that number of times  
 C) Sum an array  
   - Example: `[2, 4, 10]` should return `16`  
 D) Sum only the even numbers in an array  
@@ -245,7 +245,7 @@ return output
   
 **Reading 2:**  
 Set the variable `given` to different things to see what this code does  
-  - Set `given = 'racecar'  
+  - Set `given = 'racecar'`  
   - Set `given = 'test'`  
   - Set `given = [2, 1, 2]`  
   - Set `given = [1, 2, 3]`  
