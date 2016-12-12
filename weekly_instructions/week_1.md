@@ -156,109 +156,112 @@ Feel free to ask for help and share knowledge from fellow students and from me v
   
 If you want more work, let me know
 
-### 1. Sum Array
-Go to https://repl.it/EhIS/2
+### Basic Homework:
 
-1.1 ) Sum all numbers in array
-Using what you learned in class, write a function that takes an array of numbers returns the sum
-When you run it, all 3 tests should print out "Great Job!"
+### 1. Arrays
+A) `['a', 'b', 'c', 'd', 'e']`  
+  - use indexes to get the letter 'd' from the array  
+  - uses negative indexes to get the letter 'd'  
 
-1.2) Only sum odd numbers
-1.3) Only sum numbers > 10
+### 2. Booleans
+A) inequalities: type these into repl.it to see what they output  
+  - 10 < 20  
+  - 'hello' != 'hello'  
+  - (50 / 2) >= 25  
+B) operators:  use repl to see what each of these returns  
+  - 10 > 5 && 10 < 20  
+  - 10 < 5 && 10 < 20  
+  - 10 > 5 && 10 > 20  
+  - 10 > 5 && 10 < 20  
+  
+  - 10 > 5 || 10 < 20  
+  - 10 < 5 || 10 < 20  
+  - 10 > 5 || 10 > 20  
+  - 10 > 5 || 10 < 20  
 
+### 3. Control flow
+Get input from the user:
+```
+print 'Give me a number: '  # Tell the user to input a number
+number = gets.chomp  # Set their input to the variable "number".  Chomp cuts off the newline
+```
+  
+A) Write a program that takes a number  
+  - If the number is even then print "This number is even"  
+  - If the number is odd print "This number is odd"  
+  - If the number is 0, print "This is zero"  
+  
+HINT: use the modulo operator `%` to determine if odd or even  
+
+
+### 4. While loop
+A) Write a while loop that prints something 10 times  
+B) Use `gets` to ask the user and print something that number of times
+C) Sum an array  
+  - Example: `[2, 4, 10]` should return `16`  
+D) Sum only the even numbers in an array  
+  - Example: `[2, 5, 8, 17]` should return `10`  
+E) Sum numbers greater than 10  
+  - Example: `[5, 100, 9, 4]` should return `18`  
   
   
-### 2. Read this code
-Read the following code. Make sure you understand every piece.  Play with it in Repl.it.  Google search for anything you don't know.  If there's something you don't understand and can't find on google message me in slack and make a note of it so that we can discuss it in class
+### 5. Complex control flow
+A) Convert [this flow chart](https://ih0.redbubble.net/image.32643010.3931/flat,550x550,075,f.jpg) into a program  
+  - Ask the user a yes/no question at each decision point to naviage the flow  
+B) Write a program that asks for a users age and the state they live in and tells them what rights they have  
+  - Drinking  
+  - Smoking  
+  - Driving  
+  - Gambling  
+  - Sexual consent  
+  - Marijuana  
 
+
+### 6. Read this code
+Read the following code. Make sure you understand every piece.  Play with it in Repl.it.  Google search for anything you don't know.  If there's something you don't understand and can't find on google message me in slack and make a note of it so that we can discuss it in class  
 
 **NOTE:** All of these functions can take strings or arrays  
 
-1) Use the [precedence table](https://www.techotopia.com/index.php/Ruby_Operator_Precedence) to manually evaluate the code below
+1) Use the [precedence table](https://www.techotopia.com/index.php/Ruby_Operator_Precedence) to manually evaluate the code below  
 2) Write a summary of what each function does  
-3) Explain in your own words how the function works
+3) Explain in your own words how the function works  
 
-**Reading 1:**
+**Reading 1:**  
 ```
 # Can take a string or array
-def some_function(given_string)
-  i = 0
-  output = ''
+given_string = "This is the test string"
+i = 0
+output = ''
 
-  while i < given_string.length
-    output += given_string[i * -1 - 1]
-    i += 1
-  end
-
-  return output
+while i < given_string.length
+  output += given_string[i * -1 - 1]
+  i += 1
 end
+
+return output
 ```
-**HINTS: Strings have indexes like arrays.  Both have negative indexes**
-
-
-**Reading 2:**
-```
-# Can take a string or array
-def some_func_2(given_string)
-  if given_string.length <= 1
-  	return true
-  else
-  	if given_string[0] == given_string[-1]
-  		return some_func_2(given_string[1..-1])
-  	else
-  		return false
-  	end
-  end
-end
-```
-
-**Reading 3:**
-```
-# Can take a string or array
-def some_func_3(given_string)
-	answer = true
-
-	while given_string.length >	1 && answer == true
-		if given_string[0] == given_string[-1]
-			given_string = given_string[1..-2]
-		else
-			answer = false
-		end
-	end	
-	
-	return answer
-end
-```
-
-### 3. Learn something new
-Replace the while loop below with a for loop  
-Notes:
-- You will have to google for how to use a for loop
-- You will have to change how the answer is created and changed
-
-```
-# Can take a string or array
-def some_func_3(given_string)
-  answer = true
-
-  while given_string.length > 1 && answer == true
-    if given_string[0] == given_string[-1]
-      given_string = given_string[1..-2]
-    else
-      answer = false
-    end
-  end  
+**HINTS: Strings have indexes like arrays.  Both have negative indexes**  
   
-  return answer
-end
+  
+**Reading 2:**  
+Set the variable `given` to different things to see what this code does  
+  - Set `given = 'racecar'  
+  - Set `given = 'test'`  
+  - Set `given = [2, 1, 2]`  
+  - Set `given = [1, 2, 3]`  
+
 ```
+# Can take a string or array
+given = # set this equal to something
+answer = true
 
+while given.length >  1 && answer == true
+  if given[0] == given[-1]
+    given = given[1..-2]
+  else
+    answer = false
+  end
+end  
 
-### 4. Extra credit
-Same as exercise 3, but use an iterator instead of a loop
-Hints:
-- You don't know what an iterator is.  Google it
-- The most common ones are `each` and `map`
-
-
-
+return answer
+```
