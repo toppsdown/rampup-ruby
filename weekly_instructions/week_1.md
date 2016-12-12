@@ -63,7 +63,7 @@ To set up:
 ### 4. Read [glossary for week 1](/weekly_glossaries/week_1.md)
 
 ## In class exercises
-[Slides](toppy42.github.io/slide_nav/slides/Week_1.html)
+[Slides](http://toppy42.github.io/slide_nav/slides/Week_1.html)
 
 
 ### Exercise A: Check for ingredients
