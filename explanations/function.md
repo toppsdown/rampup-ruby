@@ -16,8 +16,10 @@ A function is a form of abstraction.  It allows us to package code and give that
 Functions are like the verbs of our code
 
 ```
+# Function
 add_two_numbers(5, 6)
 
+# Methods
 harry_potter.casts('alohamora')
 
 tim.eats('ham sandwich')
