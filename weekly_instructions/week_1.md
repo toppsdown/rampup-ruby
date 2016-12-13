@@ -214,7 +214,7 @@ E) Sum numbers greater than 10
   
 ### 5. Complex control flow
 A) Convert [this flow chart](https://ih0.redbubble.net/image.32643010.3931/flat,550x550,075,f.jpg) into a program  
-  - Ask the user a yes/no question at each decision point to naviage the flow  
+  - Ask the user a yes/no question at each decision point to navigate the flow  
 
 B) Write a program that asks for a users age and the state they live in and tells them what rights they have  
 **NOTE: If you don't want to write out every state, just choose a couple and give an error for the rest**  
