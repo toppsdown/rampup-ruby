@@ -237,7 +237,7 @@ C) Explain in your own words how the function works
 
 **Reading 1:**  
 ```
-# Can take a string or array
+# Takes a string
 given_string = "This is the test string"
 i = 0
 output = ''
