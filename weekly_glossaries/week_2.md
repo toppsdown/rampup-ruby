@@ -23,11 +23,6 @@ This will also be your reference guide for the class
 | [Symbol](/explanations/symbol.md)| `:age` | names |
 | [Nil](/explanations/nil.md)| `nil` | represents nothingness |
 
-## Tools
-| Term | Example | Description |
-| --- | --- | --- |
-| [JSON](/explanations/json.md) | `'{"youtube": [{"video1": "cats"}]}'` | Data format used all over the web |
-
 ## Tools for abstraction
 | Term | Example | Description |
 | --- | --- | --- |
