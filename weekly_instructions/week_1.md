@@ -247,7 +247,7 @@ while i < given_string.length
   i += 1
 end
 
-return output
+output
 ```
 **HINTS: Strings have indexes like arrays.  Both have negative indexes**  
   
