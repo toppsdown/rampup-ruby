@@ -5,7 +5,7 @@
 * [Week 2 Instructions](#week-2-instructions)
   * [Table of Contents](#table-of-contents)
   * [Pre Work](#pre-work)
-     * [1. Read <a href="/weekly_glossaries/week_2.md">glossary for week 2</a>](#1-read-glossary-for-week-2)
+     * [1. Read glossary for week 2](#1-read-glossary-for-week-2)
   * [In class exercises](#in-class-exercises)
      * [1. Review from last week](#1-review-from-last-week)
         * [While loops](#while-loops)
@@ -27,13 +27,20 @@
 
 ### 1. Review from last week
 #### While loops
+- Sing 99 Bottles of beer in the console
 
 #### Control Flow
+- Ask user for input and tell them what laws they are subject to
 
 ### 2. Functions
+- PBJ with specific functions
+- PBJ with general functions
+- Using array include?
 
 ### 3. Tic Tac Toe
-
+- Planning
+- Partial implementation
+- String operations necessary
 
 ## Homework
 
@@ -64,5 +71,3 @@
 3) Players alternate choosing column to put their pieces into  
 4) Pieces put in a column drop to the bottom most row  
 5) Game ends when all spaces are filled, or a user has 4 pieces in a row  
-
-
