@@ -1,5 +1,5 @@
 inventory = ['peanut butter', 'pickles', 'jelly']
-inventory_length = 3
+inventory_length = inventory.length
 
 has_peanut_butter = false
 index = 0

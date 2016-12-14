@@ -12,8 +12,3 @@ has_bread = inventory[0] == 'bread' ||
             inventory[1] == 'bread' ||
             inventory[2] == 'bread'
 
-if has_peanut_butter && has_jelly && has_bread
-  puts 'You have all necessary ingredients'
-else
-  puts 'You need to go to the store'
-end

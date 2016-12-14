@@ -4,11 +4,11 @@
   * [Week 1 Instructions](#week-1-instructions)
       * [Table of Contents](#table-of-contents)
       * [Pre Work](#pre-work)
-         * [0. Fill out the <a href="https://fundies.typeform.com/to/nWenNm">survey</a>](#0-fill-out-the-survey)
+         * [0. Fill out the survey](#0-fill-out-the-survey)
          * [1. Sign up for github](#1-sign-up-for-github)
          * [2. Sign up for Repl.it](#2-sign-up-for-replit)
          * [3. Sign up for Slack](#3-sign-up-for-slack)
-         * [4. Read <a href="/weekly_glossaries/week_1.md">glossary for week 1</a>](#4-read-glossary-for-week-1)
+         * [4. Read glossary for week 1](#4-read-glossary-for-week-1)
       * [In class exercises](#in-class-exercises)
          * [Exercise A: Check for ingredients](#exercise-a-check-for-ingredients)
          * [Exercise B: Precedence](#exercise-b-precedence)
@@ -96,66 +96,48 @@ Required Topics:
 3) Abstract with Variables  
 [Answer](/weekly_exercises/week_1/A_3.rb)  
 
-### Exercise B: Precedence  
-1) Find the error in this code by evaluating the code like a computer  
-
-What does this return?  What should it return?
-Find the error using the [Precedence table](https://www.techotopia.com/index.php/Ruby_Operator_Precedence)  
-
-Required Topics:  
-- Precedence  
-
-Starting code:  
-```
-['bread', 'peanut butter'][0] == 'bread' ||
-['bread', 'peanut butter'][1] == 'bread' &&
-['bread', 'peanut butter'][0] == 'jelly' ||
-['bread', 'peanut butter'][1] == 'jelly'  
-```
-[Answer](/weekly_exercises/week_1/B_1.md)  
-
-## Exercise C: Control Flow  
+## Exercise B: Control Flow  
 1) Write an if statement
   - if we have the right ingredients in our inventory, print out "You can make a PBJ!"  
   - if we do not have the right ingredients, print out "Go to the store"  
 
-[Starting Code](/weekly_exercises/week_1/C_0.rb)  
+[Starting Code](/weekly_exercises/week_1/B_0.rb)  
 
 Required Topics:  
 - Control Flow  
 - `puts` (Strings)  
 
-[Answer](/weekly_exercises/week_1/C_1.rb)  
+[Answer](/weekly_exercises/week_1/B_1.rb)  
 
 2) Test your code  
   - Change your inventory to not have the right ingredients.  Does it print the right sentence?  
   - Change your inventory to have the right ingredients.  Does it print the right sentence?  
 
 
-## Exercise D: While Loop  
-[Starting State](/weekly_exercises/week_1/D_0.rb)  
+## Exercise C: While Loop  
+[Starting State](/weekly_exercises/week_1/C_0.rb)  
 
 1) Change your code to use while loops  
 Required Topics:  
 - While Loops  
 
-[Answer](/weekly_exercises/week_1/D_1.rb)  
+[Answer](/weekly_exercises/week_1/C_1.rb)  
 
 2) Change your code to allow any length of inventory  
 Required Topics:  
 - Array Methods  
 
-[Answer](/weekly_exercises/week_1/D_2.rb)  
+[Answer](/weekly_exercises/week_1/C_2.rb)  
 
-## Exercise E: Functions
+## Exercise D: Functions
 1) Write a function that takes an inventory array as an argument and tells us if there is peanut butter in it  
-[Answer](/weekly_exercises/week_1/E_1.rb)  
+[Answer](/weekly_exercises/week_1/D_1.rb)  
 
 2) Write a general function that takes an inventory and an item and checks if the item is in the inventory  
-[Answer](/weekly_exercises/week_1/E_2.rb)  
+[Answer](/weekly_exercises/week_1/D_2.rb)  
 
 3) Use the general function to clean up the code from exercise D  
-[Answer](/weekly_exercises/week_1/E_3.rb)  
+[Answer](/weekly_exercises/week_1/D_3.rb)  
 
 
 ## Homework
@@ -193,7 +175,7 @@ B) operators:  use repl to see what each of these returns
 
 ### 3. Control flow
 Get input from the user:
-```
+```ruby
 print 'Give me a number: '  # Tell the user to input a number
 number = gets.chomp  # Set their input to the variable "number".  Chomp cuts off the newline
 ```
@@ -247,7 +229,7 @@ B) Write a summary of what each function does
 C) Explain in your own words how the function works  
 
 **Reading 1:**  
-```
+```ruby
 # Takes a string
 given_string = "This is the test string"
 i = 0
@@ -270,7 +252,7 @@ Set the variable `given` to different things to see what this code does
   - Set `given = [2, 1, 2]`  
   - Set `given = [1, 2, 3]`  
 
-```
+```ruby
 # Can take a string or array
 given = # set this equal to something
 answer = true

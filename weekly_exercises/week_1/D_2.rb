@@ -1,28 +1,15 @@
-inventory = ['peanut butter', 'pickles', 'jelly']
-inventory_length = inventory.length
+def has_item?(inventory, item)
+  has_item = false
+  inventory_length = inventory.length
+  index = 0
 
-has_peanut_butter = false
-index = 0
-while index < inventory_length
-  has_peanut_butter = has_peanut_butter || (inventory[index] == 'peanut butter')
-  index = index + 1
+  while index < inventory_length
+    has_item = has_item || (inventory[index] == item)
+    index = index + 1
+  end
+
+  has_item
 end
 
-has_jelly = false
-index = 0
-while index < inventory_length
-  has_jelly = has_jelly || (inventory[index] == 'jelly')
-  index = index + 1
-end
-
-has_bread = false
-while index < inventory_length
-  has_bread = has_bread || (inventory[index] == 'jelly')
-  index = index + 1
-end
-
-if has_peanut_butter && has_jelly && has_bread
-  puts 'You have all necessary ingredients'
-else
-  puts 'You need to go to the store'
-end
+has_item?(['peanut butter', 'pickles'], 'peanut butter') # true
+has_item?(['jelly', 'pickles'], 'peanut butter') # false
