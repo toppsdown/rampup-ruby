@@ -96,7 +96,7 @@ Required Topics:
 3) Abstract with Variables  
 [Answer](/weekly_exercises/week_1/A_3.rb)  
 
-## Exercise B: Control Flow  
+### Exercise B: Control Flow  
 1) Write an if statement
   - if we have the right ingredients in our inventory, print out "You can make a PBJ!"  
   - if we do not have the right ingredients, print out "Go to the store"  
@@ -113,8 +113,13 @@ Required Topics:
   - Change your inventory to not have the right ingredients.  Does it print the right sentence?  
   - Change your inventory to have the right ingredients.  Does it print the right sentence?  
 
+3) Tell the user what ingredients they need to buy
+Required Topics:
+- More advanced control flow
+- String interpolation
 
-## Exercise C: While Loop  
+
+### Exercise C: While Loop  
 [Starting State](/weekly_exercises/week_1/C_0.rb)  
 
 1) Change your code to use while loops  
@@ -129,7 +134,7 @@ Required Topics:
 
 [Answer](/weekly_exercises/week_1/C_2.rb)  
 
-## Exercise D: Functions
+### Exercise D: Functions
 1) Write a function that takes an inventory array as an argument and tells us if there is peanut butter in it  
 [Answer](/weekly_exercises/week_1/D_1.rb)  
 
