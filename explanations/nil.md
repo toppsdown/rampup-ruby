@@ -6,12 +6,12 @@ Nil represents NOTHINGNESS
 
 ## Assigning as nil
 `nil` is a value that can be assigned to variables
-```
+```ruby
 empty_variable = nil
 ```
 
 ## Getting an unset value from an array or hash
-```
+```ruby
 my_array = [0,1,2,3]
 my_array[4] #=> nil
 
@@ -26,7 +26,7 @@ This means we can use it in conditionals
 
 
 This example only prints out your name if name is defined in the hash
-```
+```ruby
 my_hash = { age: 27 }
 
 if my_hash[:name]

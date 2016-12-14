@@ -15,7 +15,7 @@ A function is a form of abstraction.  It allows us to package code and give that
 ## Metaphor
 Functions are like the verbs of our code
 
-```
+```ruby
 # Function
 add_two_numbers(5, 6)
 
@@ -26,7 +26,7 @@ tim.eats('ham sandwich')
 ```
 
 ## How to create a function
-```
+```ruby
 def tell_me_i_am_awesome
   puts 'you are awesome'
 end
@@ -37,7 +37,7 @@ Functions are all lowercase.  If multiple words, connect with underscores
 
 If your function is answering a question, it is common to name it with a question mark
 
-```
+```ruby
 def is_ethan?(name)
   name == 'Ethan'
 end
@@ -53,7 +53,7 @@ output: `you are awesome`
 ## Parameters/Arguments
 Usually, we want to give something to a function that it can use.  These are called parameters/arguments.  Arguments are variables that can be used in our code, but are not set until the function is called
 
-```
+```ruby
 def tell_me_i_am_awesome(my_name)
   puts 'Hey ' + my_name
   puts 'You are so awesome'
@@ -63,7 +63,7 @@ end
 
 To call: `tell_me_i_am_awesome('Dwayne Johnson')`
 Output:
-```
+```ruby
 Hey Dwayne Johnson
 You are so awesome
 ```

@@ -21,7 +21,7 @@ If you forget to put `end`, you will get an error like this:
 
 Please indent your code so that if/else/end are aligned, and the internal conditions are aligned
 
-```
+```ruby
 if my_var > 9000
   puts 'HIS POWER LEVEL IS OVER 9000!'
 else
@@ -31,12 +31,12 @@ end
 
 
 ### Inline conditional
-```
+```ruby
 puts 'Hi' if user_name == 'Ethan'
 ```
 
 Exactly the same as:
-```
+```ruby
 if user_name == 'Ethan'
   puts 'Hi'
 end
@@ -51,7 +51,7 @@ Don't use this.  Just for reading purposes
 ## Types of conditionals
 
 ### if/elsif/else:
-```
+```ruby
 if my_age >= 21
   puts 'You can drink'
 elsif my_age >= 18
@@ -66,7 +66,7 @@ end
 Opposite of an if statement.  Only used to make code more like english  
 These do the same thing
 
-```
+```ruby
 if my_age >= 21
   puts 'You can drink'
 end
@@ -80,7 +80,7 @@ end
 ### case:
 When there are many elsifs in your conditional, you may prefer a case
 
-```
+```ruby
 case my_age
 when my_age >= 21
   puts 'You can drink'
@@ -103,14 +103,14 @@ Everything else is considered `true`
 ### Single `=` instead of double `==`:
 
 This will always execute because `myage = 21` returns `21` which is [truthy](#truthiness)
-```
+```ruby
 if my_age = 21
   puts 'You are 21'
 end
 ```
 
 Make sure you are actually comparing:
-```
+```ruby
 if my_age == 21
   puts 'You are 21'
 end
@@ -118,7 +118,7 @@ end
 
 
 ### Conditions that can never be reached:
-```
+```ruby
 if my_age >= 18
   puts 'You can smoke'
 elsif my_age >= 21
@@ -132,7 +132,7 @@ end
 ### Missed cases:
 This code tells us that 0 is a negative number.  That doesn't sound right
 
-```
+```ruby
 if my_number > 0
   puts 'This number is positive'
 else
@@ -145,7 +145,7 @@ end
 Make sure you are testing the right thing!  
 This code will not allow an 18 year old to smoke or a 21 year old to drink
 
-```
+```ruby
 if my_age > 21
   puts 'You can drink'
 elsif my_age > 18

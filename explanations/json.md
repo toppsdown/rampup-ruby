@@ -9,7 +9,7 @@ It looks very similar to ruby hashes but is a little different
 
 ## Example JSON
 When we receive JSON from the web, it is always a string
-```
+```ruby
 '{
   "person_1": {
     "age": 1,
@@ -34,7 +34,7 @@ The backslashes are "escaping" the quotations.  Otherwise, the computer would th
 
 ## Parsing(reading) JSON
 In Ruby, when we get JSON it will be a string.  We parse it with the JSON library
-```
+```ruby
 require 'json'
 
 example_json = '{ "age": 1, "name": "Tommy Pickles" }'
@@ -56,7 +56,7 @@ Get stops near a specific lat/long:
 `http://realtime.mbta.com/developer/api/v2/stopsbylocation?api_key=wX9NwuHnZU2ToO7GmGR9uw&lat=42.346961&lon=-71.076640&format=json`
 
 Response:  
-```
+```ruby
 {
   "stop": [
     {

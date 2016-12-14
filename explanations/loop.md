@@ -20,7 +20,7 @@ While loops require:
 3) A point when the condition becomes "false" (terminating condition)  
 4) The while loop code stops with an `end`  
 
-```
+```ruby
 my_number = 0              # Starting state of the condition
 while my_number < 10       # Test the number to see if we should continue.  Do not continue if number is 10 or higher
   puts 'Your number is:'
@@ -35,7 +35,7 @@ end
 You can terminate a loop early by using the `break` keyword  
 
 This code will terminate when the number reaches 5, instead of 10
-```
+```ruby
 my_number = 0              
 while my_number < 10       
   puts 'Your number is:'
@@ -53,7 +53,7 @@ end
 ## Traversing an array
 
 This code will go through an array and add up all the numbers
-```
+```ruby
 my_array = [ 27, 89, 200 ]
 array_length = my_array.length
 current_index = 0
@@ -75,7 +75,7 @@ puts total_sum   # Will print 316
 
 ### Forgot to change the state
 This code will never terminate because we are not increasing the number, so the condition will never change
-```
+```ruby
 my_number = 0              
 while my_number < 10       
   puts 'Your number is:'
@@ -86,7 +86,7 @@ end
 ### Condition is never satisfied
 This code will never terminate because we skip over the terminating condition
 
-```
+```ruby
 my_number = 0
 while my_number != 5      # While the number is not five
   puts 'Your number is:'
