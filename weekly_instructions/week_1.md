@@ -167,7 +167,7 @@ A) inequalities: type these into repl.it to see what they output
   - `'hello' != 'hello'`  
   - `(50 / 2) >= 25`  
   
-B) operators:  use repl to see what each of these returns  
+B) operators:  Guess what these return, check your guess in REPL.IT
   - `10 > 5 && 10 < 20`  
   - `10 < 5 && 10 < 20`  
   - `10 > 5 && 10 > 20`  
