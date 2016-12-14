@@ -22,13 +22,27 @@ Example: `"This is a string with double quotes"
 **String Interpolation**
 With double quotes, we can insert values into a string
 
-## Common functions
-**puts**: `puts 'some string'` => Prints a string to the command line
-**gets**: `gets` => stops execution of the program and waits for user to input text
+## Common Methods
 **+**: `'hello' + ' ' + 'ethan'
+**downcase**: `'OMG'.downcase` => 'omg'
+**empty?**: `''.empty?` => true
+**gets**: `gets` => stops execution of the program and waits for user to input text
+**puts**: `puts 'some string'` => Prints a string to the command line
+**reverse**: `'Hello'.reverse` => 'olleH'
+
+[More Methods](https://ruby-doc.org/core-2.2.0/String.html)
 
 ### String interpolation
-Using double quotes, we can
+Using double quotes, we can inject code into our strings
+```ruby
+my_name = 'Timmy'
+puts "Your name is #{my_name}"  # prints "Your name is Timmy"
+
+user_input = gets.chomp
+puts "You entered: #{user_input}"  # Prints the user input back to the user
+
+puts "5 x 5 = #{5 x 5}"  # Prints "5 x 5 = 25".  Renders the code inside the curly braces
+```
 
 
 ## Additional Reading

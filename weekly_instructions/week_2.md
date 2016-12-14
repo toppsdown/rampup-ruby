@@ -14,87 +14,45 @@
 ### 1. Read [glossary for week 2](/weekly_glossaries/week_2.md)
 
 ## In class exercises
-Still to come
 
+### 1. Review from last week
+#### While loops
+
+#### Control Flow
+
+### 2. Functions
+
+### 3. Tic Tac Toe
 
 
 ## Homework
 
+### 1. Plan for Tic Tac Toe
+- Use the problem solving framework to break down all the pieces for Tic Tac Toe
 
-### 1. Read this code
-Read the following code. Make sure you understand every piece.  Play with it in Repl.it.  Google search for anything you don't know.  If there's something you don't understand and can't find on google message me in slack and make a note of it so that we can discuss it in class
+**Rules:***
+1) 3x3 game board
+2) Two players: X and O
+3) Players alternate choosing spaces
+4) Game ends when all spaces are filled or one player has 3 spaces in a row
 
+### 2. Implement Tic Tac Toe v1
+- Use a single array as the game board
 
-**NOTE:** All of these functions can take strings or arrays  
+### 3. Implement Tic Tac Toe v2
+- Use a multi dimensional array as the game board
 
-1) Use the [precedence table](https://www.techotopia.com/index.php/Ruby_Operator_Precedence) to manually evaluate the code below
-2) Write a summary of what each function does  
-3) Explain in your own words how the function works
+### 4. Implement Tic Tac Toe v3
+- Make the game board 5x5 instead of 3x3
+- Use loops or iterators to clean up your code
 
-**Reading 1:**
-```
-# Can take a string or array
-def some_func_2(given_string)
-  if given_string.length <= 1
-    return true
-  else
-    if given_string[0] == given_string[-1]
-      return some_func_2(given_string[1..-1])
-    else
-      return false
-    end
-  end
-end
-```
+### 5. Implement Connect 4
 
-**Reading 3:**
-```
-# Can take a string or array
-def some_func_3(given_string)
-  answer = true
-
-  while given_string.length >  1 && answer == true
-    if given_string[0] == given_string[-1]
-      given_string = given_string[1..-2]
-    else
-      answer = false
-    end
-  end  
-  
-  return answer
-end
-```
-
-### 3. Learn something new
-Replace the while loop below with a for loop  
-Notes:
-- You will have to google for how to use a for loop
-- You will have to change how the answer is created and changed
-
-```
-# Can take a string or array
-def some_func_3(given_string)
-  answer = true
-
-  while given_string.length > 1 && answer == true
-    if given_string[0] == given_string[-1]
-      given_string = given_string[1..-2]
-    else
-      answer = false
-    end
-  end  
-  
-  return answer
-end
-```
-
-
-### 4. Extra credit
-Same as exercise 3, but use an iterator instead of a loop
-Hints:
-- You don't know what an iterator is.  Google it
-- The most common ones are `each` and `map`
-
-
+**Rules:***
+1) 6x6 game board
+2) Two players: X and O
+3) Players alternate choosing column to put their pieces into
+4) Pieces put in a column drop to the bottom most row
+5) Game ends when all spaces are filled, or a user has 4 pieces in a row
 
 

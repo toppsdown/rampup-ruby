@@ -20,6 +20,7 @@ This will also be your reference guide for the class
 | [Precedence](/explanations/precedence.md) | | The order that computer reads code |
 | Recursion |  | Repeating a process with a smaller problem |
 
+
 ## Data types
 | Term | Example | Description |
 | --- | --- | --- |
@@ -35,6 +36,7 @@ This will also be your reference guide for the class
 | [Boolean Comparison](/explanations/boolean.md#boolean-comparisons) | `1 == 1` returns `true`, `'text'==2` returns `false` |	Equalities and inequalities |
 | [Boolean Operator](/explanations/boolean.md#boolean-operators) | AND: `1==1 && 2==2` returns `true` OR: `1==1 || 'text'==2` returns `true` | Combines boolean comparisons |
 | [Control Flow](/explanations/control_flow.md) | `puts 'equal' if 1==1` | How to teach the computer to make decisions |
+
 
 ## Tools for abstraction
 | Term | Example | Description |
