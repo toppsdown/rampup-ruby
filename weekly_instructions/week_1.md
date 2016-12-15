@@ -170,12 +170,12 @@ B) operators:  Guess what these return, check your guess in REPL.IT
   - `10 > 5 && 10 < 20`  
   - `10 < 5 && 10 < 20`  
   - `10 > 5 && 10 > 20`  
-  - `10 > 5 && 10 < 20`  
+  - `10 < 5 && 10 > 20`  
   
   - `10 > 5 || 10 < 20`  
   - `10 < 5 || 10 < 20`  
   - `10 > 5 || 10 > 20`  
-  - `10 > 5 || 10 < 20`  
+  - `10 < 5 || 10 > 20`  
 
 ### 3. Control flow
 Get input from the user:
@@ -189,7 +189,7 @@ A) Write a program that takes a number
   - If the number is odd print "This number is odd"  
   - If the number is 0, print "This is zero"  
   
-HINT: use the modulo operator `%` to determine if odd or even  
+HINT: use the modulo operator `%` to determine if odd or even.  use `to_i` method to convert string to integer  
 
 
 ### 4. While loop
