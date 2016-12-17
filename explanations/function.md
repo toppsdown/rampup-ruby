@@ -63,10 +63,23 @@ end
 
 To call: `tell_me_i_am_awesome('Dwayne Johnson')`
 Output:
-```ruby
+```
 Hey Dwayne Johnson
 You are so awesome
 ```
+
+```ruby
+def better_than(person1, person2)
+  puts person1 + ' is better than ' + person2
+end
+```
+
+To call: `better_than('Tim', 'Bob')`  
+Output:
+```
+Tim is better than Bob
+```
+
 
 ## Scope
 The arguments given to a function, and the variables created inside a function are only available to that function.
