@@ -61,7 +61,7 @@ end
 
 ```
 
-To call: `tell_me_i_am_awesome('Dwayne Johnson')`
+To call: `tell_me_i_am_awesome('Dwayne Johnson')`  
 Output:
 ```
 Hey Dwayne Johnson
@@ -73,7 +73,8 @@ def better_than(person1, person2)
   puts person1 + ' is better than ' + person2
 end
 ```
-
+  
+  
 To call: `better_than('Tim', 'Bob')`  
 Output:
 ```
