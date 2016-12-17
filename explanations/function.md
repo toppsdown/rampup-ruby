@@ -67,7 +67,8 @@ Output:
 Hey Dwayne Johnson
 You are so awesome
 ```
-
+  
+### Multiple arguments  
 ```ruby
 def better_than(person1, person2)
   puts person1 + ' is better than ' + person2
