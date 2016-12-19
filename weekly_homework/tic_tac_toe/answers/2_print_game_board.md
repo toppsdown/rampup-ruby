@@ -13,6 +13,7 @@
       * [Ending print board](#ending-print-board)
 
 ## Starting place
+```rubye
 def print_game_board(board)
   # print first row of board
   # print divider
@@ -20,6 +21,7 @@ def print_game_board(board)
   # print divider
   # print third row of board
 end
+```
 
 ## 2.0) Print first row of spaces
 ### Using string concatenation
