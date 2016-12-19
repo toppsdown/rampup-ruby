@@ -124,7 +124,7 @@ end
 ```
 
 ### Tests
-```
+```ruby
 puts "Tests for second row\n\n"
 puts "Second row of empty board"
 print_second_row([])
