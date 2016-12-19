@@ -25,7 +25,7 @@ end
 
 ## 2.0) Print first row of spaces
 ### Using string concatenation
-```
+```ruby
 def print_first_row(board)
   output_string = ' '
 
@@ -92,7 +92,7 @@ end
 
 ## 2.2) print second row of board
 ### Using array joining
-```
+```ruby
 def print_second_row(board)
   array_for_join = []
 
@@ -128,12 +128,17 @@ end
 puts "Tests for second row\n\n"
 puts "Second row of empty board"
 print_second_row([])
+
 puts "\n\n"
+
 puts "Second row of partial board"
 print_second_row([nil,nil,nil, 'O', nil, 'X'])
+
 puts "\n\n"
+
 puts "Second row of full board"
 print_second_row([nil, nil, nil, 'O', 'X', 'X'])
+
 puts "\n\n"
 ```
 
