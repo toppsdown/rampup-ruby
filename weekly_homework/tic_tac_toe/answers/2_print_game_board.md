@@ -13,7 +13,7 @@
       * [Ending print board](#ending-print-board)
 
 ## Starting place
-```rubye
+```ruby
 def print_game_board(board)
   # print first row of board
   # print divider
