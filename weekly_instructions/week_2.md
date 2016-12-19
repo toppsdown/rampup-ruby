@@ -13,6 +13,7 @@
      * [2. Functions](#2-functions)
      * [3. Tic Tac Toe](#3-tic-tac-toe)
   * [Homework](#homework)
+     * [Tutorial: Tic Tac Toe](#tutorial)
      * [1. Plan for Tic Tac Toe](#1-plan-for-tic-tac-toe)
      * [2. Implement Tic Tac Toe v1](#2-implement-tic-tac-toe-v1)
      * [3. Implement Tic Tac Toe v2](#3-implement-tic-tac-toe-v2)
@@ -43,6 +44,8 @@
 - String operations necessary
 
 ## Homework
+
+### Tutorial: Tic Tac Toe
 
 ### 1. Plan for Tic Tac Toe
 - Use the problem solving framework to break down all the pieces for Tic Tac Toe  
