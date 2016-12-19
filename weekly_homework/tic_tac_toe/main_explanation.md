@@ -7,7 +7,7 @@ B) write out all the steps in the game
 
 ### Starting code
 ```ruby
-def main_loop
+def start_game
   # Set up the data for the game
 
   # Create initial conditions for while loop
@@ -16,6 +16,8 @@ def main_loop
     # run through all the steps in the game loop
   end
 end
+
+start_game # this starts the game.  You can also call this in the repl interactive environment
 ```
 
 ### Answer
