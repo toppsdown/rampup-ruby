@@ -86,9 +86,11 @@ user_input = gets.chomp.to_i
 ### 5. check if game over  
   - check for win  
   - check for tie  
+
 ### 6. handle game over case
   - Tell user what happened  
   - Terminate the loop  
+
 ### 7. handle game continue case    
   - change to other user    
 
