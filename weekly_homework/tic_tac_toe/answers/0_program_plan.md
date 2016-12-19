@@ -3,7 +3,7 @@
 ## Main structure of program
 
 ```ruby
-def main_loop
+def start_game
 
   # Create starting state of board
 
@@ -33,6 +33,8 @@ def main_loop
       # tell user not available
   end
 end
+
+start_game
 ```
 
 ## List of pieces and explanations
