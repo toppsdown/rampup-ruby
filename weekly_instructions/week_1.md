@@ -10,6 +10,7 @@
          * [3. Sign up for Slack](#3-sign-up-for-slack)
          * [4. Read <a href="/weekly_glossaries/week_1.md">glossary for week 1</a>](#4-read-glossary-for-week-1)
       * [In class exercises](#in-class-exercises)
+         * [Slides](#week-1-slides)
          * [Exercise A: Check for ingredients](#exercise-a-check-for-ingredients)
          * [Exercise B: Control Flow](#exercise-b-control-flow)
          * [Exercise C: While Loop](#exercise-c-while-loop)
@@ -73,7 +74,7 @@ To set up:
 ### 4. Read [glossary for week 1](/weekly_glossaries/week_1.md)
 
 ## In class exercises
-[Slides](http://toppy42.github.io/slide_nav/slides/Week_1.html)
+### [Week 1 Slides](http://toppy42.github.io/slide_nav/slides/Week_1.html)
 
 
 ### Exercise A: Check for ingredients
@@ -170,12 +171,12 @@ B) operators:  Guess what these return, check your guess in REPL.IT
   - `10 > 5 && 10 < 20`  
   - `10 < 5 && 10 < 20`  
   - `10 > 5 && 10 > 20`  
-  - `10 > 5 && 10 < 20`  
+  - `10 < 5 && 10 > 20`  
   
   - `10 > 5 || 10 < 20`  
   - `10 < 5 || 10 < 20`  
   - `10 > 5 || 10 > 20`  
-  - `10 > 5 || 10 < 20`  
+  - `10 < 5 || 10 > 20`  
 
 ### 3. Control flow
 Get input from the user:
@@ -189,7 +190,7 @@ A) Write a program that takes a number
   - If the number is odd print "This number is odd"  
   - If the number is 0, print "This is zero"  
   
-HINT: use the modulo operator `%` to determine if odd or even  
+HINT: use the modulo operator `%` to determine if odd or even.  use `to_i` method to convert string to integer  
 
 
 ### 4. While loop
