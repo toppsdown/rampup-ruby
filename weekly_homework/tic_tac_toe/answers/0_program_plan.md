@@ -69,7 +69,7 @@ user_input = gets.chomp.to_i
 ```
 
 #### Optional
-1) Check that user entered a number 0-8
+1) Check that user entered a number 0-8  
 2) Add ability for user to exit the game  
 
 ### 4. process what happens for chosen space  
@@ -84,12 +84,12 @@ user_input = gets.chomp.to_i
 [Answer](4_process_space_choice.md)
 
 ### 5. check if game over  
-  - check for win
-  - check for tie
+  - check for win  
+  - check for tie  
 ### 6. handle game over case
-  - Tell user what happened
-  - Terminate the loop
+  - Tell user what happened  
+  - Terminate the loop  
 ### 7. handle game continue case    
-  - change to other user  
+  - change to other user    
 
 
