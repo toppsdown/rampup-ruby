@@ -14,8 +14,8 @@ def main_loop
   current_player = users.first
 
   # Create initial conditions for while loop
-  over = false
-  while !over
+  game_over = false
+  while game_over != true
 
     # Print out current game board
     # Get user input (a space number)
@@ -37,14 +37,18 @@ end
 
 ## List of pieces and explanations
 ### 1. Create starting state of board  
-For the first example, we will use a single array.  
+For the first example, we will use a single 9 space array.  
 
 ```ruby
-board = []
+# Explicit
+board = [nil, nil, nil, nil, nil, nil, nil, nil, nil]
+
+# Shortcut
+board = [nil] * 9
 ```
 
 ### 2. Print out current game board  
-```
+```ruby
 def print_game_board(board)
   # print first row of spaces
   # print divider
@@ -69,7 +73,7 @@ user_input = gets.chomp.to_i
 2) Add ability for user to exit the game  
 
 ### 4. process what happens for chosen space  
-```ruby
+```
 # If space is available
   # fill in space with user icon
   # ...
