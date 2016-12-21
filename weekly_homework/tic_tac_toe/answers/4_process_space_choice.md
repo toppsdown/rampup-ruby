@@ -4,10 +4,15 @@
 ## Starting state
 ```ruby
     # If space is available
+    if space_available?(board, space)
+    
       # fill in space with user icon
       # ...
+      
     # If not available
+    else
       # tell user not available
+    end
 ```
 
 ## 4.1) Check if space is available
