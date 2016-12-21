@@ -108,7 +108,7 @@ else
 end
 ```
 
-```
+```ruby
 # This is put in the same file below the other functions
 def game_over?(board)
   check_for_win(board) || all_spots_taken?(board)
