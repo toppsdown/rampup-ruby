@@ -4,7 +4,6 @@
 
 ```ruby
 def start_game
-
   # 1. Create starting state of board
 
   # Create user list
@@ -23,9 +22,10 @@ def start_game
 
     # 4. Process what happens for that space
     # If space is available
-      # fill in space with user icon
+      # fill in space with user icon      
 
       # 5. Check if game over, by win or tie
+
       # 6. if game over
         # Tell user what happened
         # Terminate the loop
@@ -75,7 +75,8 @@ end
 This assumes that the user will enter a number in range of the board
 
 ```ruby
-user_input = gets.chomp.to_i
+user_input = gets.chomp
+space = user_input.to_i
 ```
 
 #### Optional
@@ -124,13 +125,15 @@ def all_spots_taken?(board)
 end
 ```
 
-  - [Check For Win Answer](/weekly_homework/tic_tac_toe/answers/5_game_over_conditions.md#51-check-for-win)  
-  - [Check For Cats Game Answer](/weekly_homework/tic_tac_toe/answers/5_game_over_conditions.md#52-check-for-cats-game)  
+  - [Answer: Check For Win](/weekly_homework/tic_tac_toe/answers/5_game_over_conditions.md#51-check-for-win)  
+  - [Answer: Check For Cats Game](/weekly_homework/tic_tac_toe/answers/5_game_over_conditions.md#52-check-for-cats-game)  
 
 
 ### 6. handle game over case
   - Tell user what happened  
   - Terminate the loop  
+
+  [Answer](/weekly_homework/tic_tac_toe/answers/6_game_over_response.md)
 
 ### 7. handle game continue case    
   - change to other user    

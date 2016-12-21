@@ -40,3 +40,8 @@ else
   puts "That space is not available.  Try again"
 end
 ```
+
+
+## Full game file after this step
+[Full File](/weekly_homework/tic_tac_toe/answers/4_ending_state.md)
+

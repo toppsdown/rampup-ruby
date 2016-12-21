@@ -29,9 +29,9 @@ end
 ### 5.1.1) Check for win in rows
 ```ruby
 def check_rows_for_win(board)
-  check_first_row ||
-  check_second_row ||
-  check_third_row
+  check_first_row(board) ||
+  check_second_row(board) ||
+  check_third_row(board)
 end
 
 def check_first_row(board)
@@ -61,9 +61,9 @@ end
 ### 5.1.2) Check for win in columns
 ```ruby
 def check_columns_for_win(board)
-  check_first_column ||
-  check_second_column ||
-  check_third_column
+  check_first_column(board) ||
+  check_second_column(board) ||
+  check_third_column(board)
 end
 
 def check_first_column(board)
@@ -92,8 +92,8 @@ end
 ### 5.1.3) Check for win in diagonals
 ```ruby
 def check_diagonals_for_win(board)
-  check_forward_diag ||
-  check_backward_diag
+  check_forward_diag(board) ||
+  check_backward_diag(board)
 end
 
 def check_forward_diag(board)  
@@ -153,3 +153,5 @@ def all_spots_taken?(board)
 end
 ```
 
+## Full game file after this step
+[Full File](/weekly_homework/tic_tac_toe/answers/5_ending_state.md)

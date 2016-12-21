@@ -60,6 +60,8 @@ end
 ```
 
 ### Tests
+- Add these to your file to check that your functions work  
+- Remove them before continuing  
 ```ruby
 puts "Tests for first row\n\n"
 
@@ -124,6 +126,9 @@ end
 ```
 
 ### Tests
+- Add these to your file to check that your functions work  
+- Remove them before continuing  
+
 ```ruby
 puts "Tests for second row\n\n"
 puts "Second row of empty board"
@@ -142,6 +147,9 @@ print_second_row([nil, nil, nil, 'O', 'X', 'X'])
 puts "\n\n"
 ```
 
+## 2.3) print third row of board
+Do it on your own
+
 ## Ending print board
 ```ruby
 def print_game_board(board)
@@ -153,4 +161,6 @@ def print_game_board(board)
 end
 ```
 
+## Full game file after this step
+[Full File](/weekly_homework/tic_tac_toe/answers/2_ending_state.md)
 
