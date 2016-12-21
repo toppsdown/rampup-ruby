@@ -96,8 +96,51 @@ end
 [Answer](4_process_space_choice.md)
 
 ### 5. check if game over  
-  - check for win  
-  - check for tie  
+```ruby
+# This plugs into the while loop
+# Check if game over, by win or tie
+if game_over?(board)
+  # Tell user what happened
+  # Terminate the loop
+else
+  # change to other user
+end
+```
+
+
+# This 
+def game_over?(board)
+  check_for_win(board) || check_for_tie(board)
+end
+
+def check_for_win(board)
+
+end
+
+def check_for_tie(board)
+
+end
+```
+
+  - [check for win](/weekly_homework/tic_tac_toe/answers/5_game_over_conditions.md#51-check-for-win)  
+
+```ruby
+# Check if game over, by win or tie
+if game_over?(board)
+  # Tell user what happened
+  # Terminate the loop
+else
+  # change to other user
+end
+```
+
+  - [check for tie](/weekly_homework/tic_tac_toe/answers/5_game_over_conditions.md#52-check-for-tie)  
+
+```ruby
+def game_over?(board)
+  check_for_win(board) || check_for_tie(board)
+end
+```
 
 ### 6. handle game over case
   - Tell user what happened  
