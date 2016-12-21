@@ -5,7 +5,7 @@
 ```ruby
 def start_game
 
-  # Create starting state of board
+  # 1. Create starting state of board
 
   # Create user list
   users = ['X', 'O']  
@@ -17,17 +17,19 @@ def start_game
   game_over = false
   while game_over != true
 
-    # Print out current game board
-    # Get user input (a space number)
+    # 2. Print out current game board
 
-    # Process what happens for that space
+    # 3. Get user input (a space number)
+
+    # 4. Process what happens for that space
     # If space is available
       # fill in space with user icon
-      # Check if game over, by win or tie
-      # if game over
+
+      # 5. Check if game over, by win or tie
+      # 6. if game over
         # Tell user what happened
         # Terminate the loop
-      # if not over
+      # 7. if not over
         # change to other user
     # If not available
       # tell user not available
@@ -38,11 +40,13 @@ start_game
 ```
 
 ## List of pieces and explanations
+Plug each of these pieces into the structure above
+
+  
 ### 1. Create starting state of board  
 For the first example, we will use a single 9 space array.  
 
 ```ruby
-# Explicit
 board = [nil, nil, nil, nil, nil, nil, nil, nil, nil]
 
 # Shortcut
@@ -51,6 +55,10 @@ board = [nil] * 9
 
 ### 2. Print out current game board  
 ```ruby
+# To call function in the while loop
+print_game_board(board)
+
+# Structure of function
 def print_game_board(board)
   # print first row of spaces
   # print divider
@@ -75,12 +83,14 @@ user_input = gets.chomp.to_i
 2) Add ability for user to exit the game  
 
 ### 4. process what happens for chosen space  
-```
-# If space is available
+```ruby
+if space_available?(board, space)
   # fill in space with user icon
   # ...
 # If not available
+else
   # tell user not available
+end
 ```
 
 [Answer](4_process_space_choice.md)
