@@ -95,7 +95,7 @@ end
 
 [Answer](4_process_space_choice.md)
 
-### 5. check if game over  
+### 5. Check if game over  
 ```ruby
 # This plugs into the while loop
 # Check if game over, by win or tie
@@ -107,40 +107,26 @@ else
 end
 ```
 
-
-# This 
+```
+# This is put in the same file below the other functions
 def game_over?(board)
-  check_for_win(board) || check_for_tie(board)
+  check_for_win(board) || all_spots_taken?(board)
 end
 
 def check_for_win(board)
-
+  # Check rows for win
+  # Check columns for win
+  # check diagonals for win
 end
 
-def check_for_tie(board)
-
-end
-```
-
-  - [check for win](/weekly_homework/tic_tac_toe/answers/5_game_over_conditions.md#51-check-for-win)  
-
-```ruby
-# Check if game over, by win or tie
-if game_over?(board)
-  # Tell user what happened
-  # Terminate the loop
-else
-  # change to other user
+def all_spots_taken?(board)
+  # Check that all spots have been taken
 end
 ```
 
-  - [check for tie](/weekly_homework/tic_tac_toe/answers/5_game_over_conditions.md#52-check-for-tie)  
+  - [Check For Win Answer](/weekly_homework/tic_tac_toe/answers/5_game_over_conditions.md#51-check-for-win)  
+  - [Check For Cats Game Answer](/weekly_homework/tic_tac_toe/answers/5_game_over_conditions.md#52-check-for-cats-game)  
 
-```ruby
-def game_over?(board)
-  check_for_win(board) || check_for_tie(board)
-end
-```
 
 ### 6. handle game over case
   - Tell user what happened  

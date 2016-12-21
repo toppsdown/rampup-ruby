@@ -1,7 +1,7 @@
 # Tic Tac Toe Tutorial: 5) check if game over  
 
 ## Starting state
-```
+```ruby
 def game_over?(board)
   check_for_win(board) || all_spots_taken?(board)
 end
@@ -114,7 +114,7 @@ end
 ```
 
 
-## 5.2) Check for tie
+## 5.2) Check for cat's game
 ```ruby
 # Option 1: Check that all spots have something in them
 def all_spots_taken?(board)
