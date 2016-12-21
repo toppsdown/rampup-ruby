@@ -137,7 +137,7 @@ end
 
 
 ## Ending State
-```
+```ruby
 def game_over?(board)
   check_for_win(board) || all_spots_taken?(board)
 end
