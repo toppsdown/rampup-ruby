@@ -27,3 +27,4 @@ In ruby, there are many parts of the syntax that are not easily searchable on go
 | `end` | Closing end | 1) Functions, 2) Loops, 3) Blocks
 | `?` | Question mark | 1) Function names, 2) Ternary conditionals
 | `!` | Bang | 1) Function names
+| `*` | Splat | 1) Multiplication, 2) Argument expansion
