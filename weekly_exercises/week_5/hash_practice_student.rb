@@ -263,7 +263,7 @@ end
 
 # Test
 check_test(has_eye_color?(noah, 'blue'), true) # should return true
-check_test(has_eye_color?(noah, 'brown'),false) # should return false
+check_test(has_eye_color?(noah, 'brown'), false) # should return false
 
 
 

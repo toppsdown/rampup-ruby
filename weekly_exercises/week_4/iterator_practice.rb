@@ -169,22 +169,36 @@ end
 # else
 # => remove guess from list and repeat
 
-names = ['bob', 'tim', 'sally']
+
 
 # Loop do structure (similar to while loop, but without the termination by condition)
 
-# loop do
+def game_loop
+  names = ['bob', 'tim', 'sally']
+  answer = names.sample
 
-#   if correct_guess?(guess)
-#     break  # this kills the loop
-#   end
+  loop do
+    puts "I chose a name from the following list"
+    puts names.join(',')
 
-# end
+    print "Guess which name I chose: "
+    user_input = gets.chomp
 
+    # did user guess correctly?
+    if user_input == answer
+      puts "Congrats!  You guessed the right name!"
+      break
+    else
+      puts "Nope, wrong answer"
 
+      # Remove the guess from the list
+      names = reject_item(names, user_input)
+    end
+  end
+end
 
-
-
+# type this into the interactive console to start the game:
+# game_loop
 
 
 
