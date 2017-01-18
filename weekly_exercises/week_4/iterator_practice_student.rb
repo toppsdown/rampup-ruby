@@ -99,13 +99,18 @@ names = ['bob', 'tim', 'sally']
 
 # Loop do structure (similar to while loop, but without the termination by condition)
 
-# loop do
+def game_loop
+  loop do
 
-#   if correct_guess?(guess)
-#     break  # this kills the loop
-#   end
+    if correct_guess?(guess)
+      break  # this kills the loop
+    end
 
-# end
+  end
+end
+
+# type this into the interactive console to start the game:
+# game_loop
 
 
 
