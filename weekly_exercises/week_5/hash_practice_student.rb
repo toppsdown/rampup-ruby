@@ -1,3 +1,10 @@
+# Ignore this, just for testing purposes
+def check_test(actual, expect)
+  status = expect == actual ? 'Pass' : 'Fail'
+  puts "#{status}, Expected: #{expect}, Actual: #{actual}"
+end
+
+
 # Hash is a mapping from a key to a value
 # For example, a vending machine maps a location code to the food in
 # that slot:
@@ -24,36 +31,46 @@ vending_machine = {
 }
 
 
-# Answer
-vending_machine = {
-'D0' => "Pop Tarts - Smores",
-'D2' => "Pop Tarts - Strawberry",
-'D4' => "Pop Tarts - Strawberry",
-'D6' => "Rice Crispy Treats",
-'D8' => "Reese's Pieces"
-}
-
 
 # To access values in the hash, we use it's key:
 # What does: vending_machine['D8'] return?
 
-# Exercise 2: Use ruby to get me a snickers.  What key do I need?
-
-
+# Exercise 2: Use ruby to get me a smores pop tarts.  What key do I need?
 
 
 
 # Iterating over hashes:
 
 # Remember that iterating over arrays give us one item
-array.each do |item|
+# my_array.each do |item|
   # do something with item
-end
+# end
 
 # When using each on hashes, we get two items
-hash.each do |key, value|
+# my_hash.each do |key, value|
   # do something with key and value
+# end
+
+
+# Example
+my_hash = {
+  'name' => 'Tom',
+  'age' => 27
+}
+
+def print_hash(hash)
+  hash.each do |key, value|
+    puts "Key: #{key} contains value: #{value}"
+  end
 end
+
+# Prints out:
+# "Key: name contains value: Tom"
+# "Key: age contains value: 27"
+
+print_hash(my_hash)
+
+
 
 
 
@@ -63,10 +80,10 @@ end
 # Write a function that uses each to print the mapping
 #
 
-
 def print_vending_menu(vending_mapping)
   # your code here
 end
+
 
 # Test
 vending_machine = {
@@ -91,12 +108,7 @@ print_vending_menu(vending_machine)
 
 
 
-# Answer
-def print_vending_menu(vending_mapping)
-  vending_mapping.each do |location, name|
-    puts "Location: #{location}, Name: #{name}"
-  end
-end
+
 
 
 
@@ -106,36 +118,25 @@ end
 # I want one of each item, how much will it cost me?
 # Write a function that uses each to sum all the prices
 
-prices = {
-  "Pop Tarts - Smores" => 1.00,
-  "Pop Tarts - Strawberry" => 1.00,
-  "Pop Tarts - Strawberry" => 1.00,
-  "Rice Crispy Treats" => 0.75,
-  "Reese's Pieces" => 1.25
-}
-
 def sum_prices(price_mapping)
   # Your code here
 end
 
 # Test
-sum_prices(prices) # should return 5
+prices = {
+  "Pop Tarts - Smores" => 1.00,
+  "Pop Tarts - Strawberry" => 1.00,
+  "Rice Crispy Treats" => 0.75,
+  "Reese's Pieces" => 1.25
+}
 
-
-# Answer
-def sum_prices(price_mapping)
-  sum = 0
-
-  price_mapping.each do |name, price|
-    sum += price
-  end
-
-  return sum
-end
+check_test(sum_prices(prices), 4) # should return $4
 
 
 
-# Explain: Nested hashes
+
+
+# Nested hashes
 vending_machine = {
   'A1' => { 'name' => 'Doritos', 'price' => 0.75 },
   'A2' => { 'name' => 'Cool Ranch Doritos', 'price' => 1.00 }
@@ -152,7 +153,24 @@ vending_machine = {
 # D6        Rice Crispy Treats      0.75
 # D8        Reese's Pieces          1.25
 
-# Answer
+
+
+# Exercise 6:
+# I want a smores pop tart and reeses pieces
+# What keys do I need?
+
+
+
+
+
+
+# Exercise 7:
+# Use each to add up and return the price
+def sum_prices(vending_mapping)
+  # your code here
+end
+
+# Test
 vending_machine = {
   'D0' => {
     'name' => "Pop Tarts - Smores",
@@ -176,31 +194,9 @@ vending_machine = {
   }
 }
 
-# Exercise 6:
-# I want a smores pop tart and reeses pieces
-# What keys do I need?
+check_test(sum_prices(vending_machine), 5.0) # Should return $5.00
 
 
-# Exercise 7:
-# Use each to add up the prices
-def sum_prices(vending_mapping)
-  # your code here
-end
-
-# Test
-sum_prices(vending_machine) # Should return 5.00
-
-
-# Answer
-def sum_prices(vending_mapping)
-  sum = 0
-
-  vending_mapping.each do |location, food_item|
-    sum += food_item['price']
-  end
-
-  return sum
-end
 
 
 
@@ -228,6 +224,7 @@ person = {
 # Exercise 8:
 #
 # Create a hash that represents you as a person
+# Include your name, age, favorite food
 me = {
 
 }
@@ -245,6 +242,8 @@ maura['age'] = 27  # sets
 # Exercise 9:
 #
 # Add more information to your representation
+# Add your eye color, hair color, and whether you wear glasses
+
 
 
 # Now let's make a guess who game
@@ -263,15 +262,10 @@ def has_eye_color?(person, color)
 end
 
 # Test
-has_eye_color?(noah, 'blue') # should return true
-has_eye_color?(noah, 'brown') # should return false
+check_test(has_eye_color?(noah, 'blue'), true) # should return true
+check_test(has_eye_color?(noah, 'brown'),false) # should return false
 
 
-
-# Answer
-def has_eye_color?(person, color)
-  person['eye_color'] == color
-end
 
 
 
@@ -297,63 +291,56 @@ end
 
 
 # Test
-reject_color(people, 'blue')
-
 # Should return
-# [
-#   { 'name' => 'Emma', 'eye_color' => 'brown' },
-#   { 'name' => 'Liam', 'eye_color' => 'hazel' }
-# ]
-
-
-# Answer
-def reject_color(people, color)
-  output_array = []
-
-  people.each do |person|
-    unless person['eye_color'] == color
-      output_array << person
-    end
-  end
-
-  return output_array
-end
-
-
-
-
-
-
-# HOMEWORK:
-
-people = [
-  { 'name' => 'Noah', 'eye_color' => 'blue' },
+expectation = [
   { 'name' => 'Emma', 'eye_color' => 'brown' },
-  { 'name' => 'Liam', 'eye_color' => 'hazel' },
-  { 'name' => 'Olivia', 'eye_color' => 'green' },
-  { 'name' => 'Mason', 'eye_color' => 'amber' },
-  { 'name' => 'Ava', 'eye_color' => 'gray' }
+  { 'name' => 'Liam', 'eye_color' => 'hazel' }
 ]
 
+check_test(reject_color(people, 'blue'), expectation)
+
+
+
+
+
+
+
+
+
+# Exercise 11:
+
 # Write a game that:
-# - chooses a random person: people.shuffle.first
+# - chooses a random person: people.sample
 
 # Loop
 # - prints the names of all people in the people list and their eye color
 # - asks the user to guess eye color
 # - if user guesses the right eye color
-# => computer says "You guessed right, I chose #{person name}"
+#   => Tell the user they win,
+#      print out the name of the person,
+#      break the loop
 # - else
-# => remove that person from the list of options
+#   => remove that person from the list
 # repeat
 
 
 
+def game_loop
+  people = [
+    { 'name' => 'Noah', 'eye_color' => 'blue' },
+    { 'name' => 'Emma', 'eye_color' => 'brown' },
+    { 'name' => 'Liam', 'eye_color' => 'hazel' },
+    { 'name' => 'Olivia', 'eye_color' => 'green' },
+    { 'name' => 'Mason', 'eye_color' => 'amber' },
+    { 'name' => 'Ava', 'eye_color' => 'gray' }
+  ]
 
+  # your code here
 
-
-
-
+  loop do
+    # your code here
+  end
+end
 
 
 

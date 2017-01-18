@@ -18,15 +18,6 @@ def print_array(array)
 end
 
 
-# Answer
-def print_array(array)
-  array.each do |thing|
-    puts thing
-  end
-end
-
-
-
 
 
 # Exercise 3: Write a function that takes an array and sums the numbers in it
@@ -36,19 +27,6 @@ end
 
 # Test
 puts sum_array([10, 20, 30]).to_s # should return 60
-
-# Answer
-def sum_array(array)
-  sum = 0
-
-  array.each do |number|
-    sum += number
-  end
-
-  return sum
-end
-
-
 
 
 
@@ -60,19 +38,6 @@ end
 # Test
 puts double_array([2, 5, 10]).to_s # Should return [ 4, 10, 20 ]
 
-# Answer
-def double_array(array)
-  output_array = []
-
-  array.each do |thing|
-    output_array << thing * 2
-  end
-
-  return output_array
-end
-
-
-
 
 
 # Exercise 5: using each write a function that selects all even numbers in an array
@@ -82,19 +47,6 @@ end
 
 # Test
 puts select_evens([2,3,4,5,6]).to_s # Should return [2,4,6]
-
-# Answer
-def select_evens(array)
-  output_array = []
-
-  array.each do |number|
-    if number % 2 == 0
-      output_array << number
-    end
-  end
-
-  return output_array
-end
 
 
 # Exercise 6: using each, write a function tells us if 'array' includes the 'given_thing'
@@ -109,19 +61,6 @@ puts array_includes?([1,5,7], 'hello').to_s # => should return false
 
 
 
-# Answer
-def array_includes?(array, given_thing)
-  answer = false
-
-  array.each do |thing|
-    if thing == given_thing
-      answer = true
-    end
-  end
-
-  return answer
-end
-
 
 
 # Exercise 7: using each, write a function that rejects a given thing from an array
@@ -134,20 +73,7 @@ end
 puts reject_item([1,2, 'hello', 'goodbye'], 'hello').to_s # should return [1, 2, 'goodbye']
 
 
-# Answer
-def reject_item(array, reject_item)
-  output_array = []
 
-  array.each do |item|
-    if item == reject_item
-
-    else
-      output_array << item
-    end
-  end
-
-  return output_array
-end
 
 
 
