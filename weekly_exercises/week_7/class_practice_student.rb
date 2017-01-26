@@ -118,17 +118,6 @@ class Person
 
 end
 
-# Answer
-class Person
-  def initialize(name)
-    @name = name
-  end
-
-  def name
-    @name
-  end
-end
-
 
 # Tests
 bobby = Person.new('Bobby')
@@ -184,12 +173,7 @@ class Person
 end
 
 
-# Answer
-class Person
-  def name=(new_name)
-    @name = new_name
-  end
-end
+
 
 # Tests
 # Set first name
@@ -219,21 +203,6 @@ class Person
   end
 end
 
-# Answer
-class Person
-  def initialize(name, eye_color)
-    @name = name
-    @eye_color = eye_color
-  end
-
-  def name
-    @name
-  end
-
-  def eye_color
-    @eye_color
-  end
-end
 
 
 # Starting state
@@ -290,50 +259,6 @@ end
 # Play game by uncommenting next line
 # guess_who_with_classes
 
-# Answer
-def guess_who_with_classes
-  people = [
-    Person.new('Noah', 'blue'),
-    Person.new('Emma', 'brown'),
-    Person.new('Liam', 'hazel'),
-    Person.new('Olivia', 'green'),
-    Person.new('Mason', 'amber'),
-    Person.new('Ava', 'gray')
-  ]
-
-  # Choose win answer
-  answer = people.sample
-
-  loop do
-    puts # for readability
-
-    # Tell user what the options are
-    people.each do |person|
-      puts "#{person.name} has eye color #{person.eye_color}"
-    end
-
-    # Tell user to guess an
-    puts
-    print 'Please guess an eye color: '
-    input = gets.chomp
-
-    if answer.eye_color == input
-      puts 'You Win!'
-      puts "The answer was #{answer.name}"
-      break
-    else
-      people = people.reject do |person|
-        person.eye_color == input
-      end
-    end
-
-    puts
-  end
-end
-
-guess_who_with_classes
-
-
 
 
 
@@ -373,70 +298,6 @@ end
 # Start game by uncommenting the next line
 # GuessWhoGame.new.start
 
-# Answer
-class PeopleSet
-  def initialize(list_of_people)
-    @list_of_people = list_of_people
-  end
-
-  def list_of_people
-    @list_of_people
-  end
-
-  def print_all
-    @list_of_people.each do |person|
-      puts "#{person.name} has eye color #{person.eye_color}"
-    end
-  end
-
-  def reject_eye_color(eye_color)
-    @list_of_people = @list_of_people.reject do |person|
-      person.eye_color == eye_color
-    end
-  end
-end
-
-class GuessWhoGame
-  def start
-    people = PeopleSet.new(
-      [
-        Person.new('Noah', 'blue'),
-        Person.new('Emma', 'brown'),
-        Person.new('Liam', 'hazel'),
-        Person.new('Olivia', 'green'),
-        Person.new('Mason', 'amber'),
-        Person.new('Ava', 'gray')
-      ]
-    )
-
-    # Choose win answer
-    answer = people.list_of_people.sample
-
-    loop do
-      puts
-
-      # Tell user what the options are
-      people.print_all
-
-      # Tell user to guess an
-      puts
-      print 'Please guess an eye color: '
-      input = gets.chomp
-
-      if answer.eye_color == input
-        puts 'You Win!'
-        puts "The answer was #{answer.name}"
-        break
-      else
-        people.reject_eye_color(input)
-      end
-
-      puts
-    end
-  end
-end
-
-GuessWhoGame.new.start
 
 
 # Example:
@@ -507,35 +368,6 @@ end
 # When designing our object architecture, think in terms of
 #   what the object has, and what it can do
 
-
-# Answer
-# Store
-# => Has inventory (FoodItems)
-# => Has cashiers
-
-# Customer
-# => has a cart
-# => has a payment method (credit card, cash)
-
-# Cart
-# => has a list of contents
-
-# FoodItem
-# => has a name
-# => has a price
-
-# Cashier
-# => can access the cart
-# => can access the customer
-# => can tally the prices and calculate the total
-# => can perform a payment transaction
-
-# Payment
-# => has a transaction amount
-# => can deduct amount from customer's payment method
-
-# PaymentMethod
-# => Has a current value
 
 
 # Exercise 6:

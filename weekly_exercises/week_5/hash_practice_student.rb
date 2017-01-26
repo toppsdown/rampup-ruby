@@ -343,6 +343,40 @@ def game_loop
 end
 
 
+def game_loop
+  people = [
+    { 'name' => 'Noah', 'eye_color' => 'blue' },
+    { 'name' => 'Emma', 'eye_color' => 'brown' },
+    { 'name' => 'Liam', 'eye_color' => 'hazel' },
+    { 'name' => 'Olivia', 'eye_color' => 'green' },
+    { 'name' => 'Mason', 'eye_color' => 'amber' },
+    { 'name' => 'Ava', 'eye_color' => 'gray' }
+  ]
+
+  # your code here
+  random_per = people.sample
+  puts "My random person #{random_per}"
+
+  loop do
+    # your code here
+    people.each do | name, eye_color|
+      puts name
+    end
+    puts "Guess the peoples eye color"
+    user_guess = gets.chomp.to_s
+
+    if user_guess == random_per['eye_color']
+      puts "You guessed correctly"
+      puts "The person's eye color your guessed correctly was #{random_per['name']}"
+      break
+    else
+      puts "you guessed wrong"
+    end
+  end
+end
+
+game_loop
+
 
 
 

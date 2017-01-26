@@ -25,6 +25,11 @@ def print_array(array)
   end
 end
 
+# ADD TEST CASE
+
+my_array = ['hello', 1, 5, 'no', 'yes']
+
+print_array(my_array)
 
 
 
