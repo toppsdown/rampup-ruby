@@ -55,7 +55,6 @@ end
 # Instance of the Person class
 Person.new
 
-
 # Initializers
 
 # How to customize the creation of your class:
@@ -68,6 +67,10 @@ class Person
 end
 
 Person.new('Bobby') # => Prints "You gave me the name: Bobby"
+
+# while in pry, create a new person
+# binding.pry
+# puts
 
 
 
@@ -94,7 +97,6 @@ bobby.print_name # => Prints 'My name is Bobby'
 
 
 
-
 # Getters: functions that return an attribute from an instance
 
 # No one other than the instance can get the instance variable so
@@ -113,9 +115,8 @@ class Person
   end
 
   def name
-    # your code here
+    @name
   end
-
 end
 
 
@@ -129,23 +130,7 @@ check_test(sam.name, 'Sam')
 
 
 
-# Side Note:
-# We've defined the Person class twice.  Does the new definition override the old one?
 
-# To test, try to use the print_name method on person
-#
-# binding.pry
-# Person.new('Timmy').print_name
-
-
-
-
-# Answer:
-# Open Classes and Monkey Patching
-#
-# Ruby has "open classes" which allow modification at any time. This is one of
-# the most amazing attributes of ruby and means you can customize other
-# people's code at any time. This process is called "Monkey Patching"
 
 
 
@@ -167,12 +152,14 @@ check_test(sam.name, 'Sam')
 class Person
 
   def name=(new_name)
-    # your code here
+    @name = new_name
   end
 
 end
 
-
+person = Person.new('Ethan')
+person.name=('New Name')
+person.name = 'New Name'
 
 
 # Tests
@@ -183,6 +170,29 @@ check_test(name_changing_person.name, 'Bobby')
 # Change name of person
 name_changing_person.name = 'Sam'
 check_test(name_changing_person.name, 'Sam')
+
+binding.pry
+puts
+
+
+
+# Side Note:
+# We've defined the Person class twice.  Does the new definition override the old one?
+
+# To test, try to use the print_name method on person
+#
+# binding.pry
+# Person.new('Timmy').print_name
+
+
+# Answer:
+# Open Classes and Monkey Patching
+#
+# Ruby has "open classes" which allow modification at any time. This is one of
+# the most amazing attributes of ruby and means you can customize other
+# people's code at any time. This process is called "Monkey Patching"
+
+
 
 
 
@@ -247,13 +257,69 @@ def guess_who_with_hashes
 end
 
 # Play game by uncommenting next line
-guess_who_with_hashes
+# guess_who_with_hashes
 
 
 def guess_who_with_classes
-  # 1) Copy the code from guess_who_with_hashes
-  # 2) replace the people hash with an array of people class instances
-  # 3) replace the hash accesses (ex. person['name']) with method calls (person.name)
+  # 1) The code from guess_who_with_hashes is copied below
+
+  # 2) Replace the list of persons with a list of Person objects
+  # For Example:
+  #   { 'name' => 'Noah', 'eye_color' => 'blue' }
+  #
+  # Becomes:
+  #   Person.new('Noah', 'blue')
+
+  # 3) Replace the hash keys with methods
+  # For Example:
+  #   noah = { 'name' => 'Noah', 'eye_color' => 'blue' }
+  #   noah['name']
+  #
+  # Becomes:
+  #   noah = Person.new('Noah', 'blue')
+  #   noah.name
+
+
+  # 2) Replace these with Person objects
+  people = [
+    { 'name' => 'Noah', 'eye_color' => 'blue' },
+    { 'name' => 'Emma', 'eye_color' => 'brown' },
+    { 'name' => 'Liam', 'eye_color' => 'hazel' },
+    { 'name' => 'Olivia', 'eye_color' => 'green' },
+    { 'name' => 'Mason', 'eye_color' => 'amber' },
+    { 'name' => 'Ava', 'eye_color' => 'gray' }
+  ]
+
+  # Choose win answer
+  answer = people.sample
+
+  loop do
+    puts # for readability
+
+    # Tell user what the options are
+    people.each do |person|
+      # 3) Replace the hash access with the corresponding method
+      puts "#{person['name']} has eye color #{person['eye_color']}"
+    end
+
+    # Tell user to guess an eye color
+    puts # newline for readability
+    print 'Please guess an eye color: '
+    input = gets.chomp
+
+    if answer['eye_color'] == input
+      puts 'You Win!'
+      puts "The answer was #{answer['name']}"
+      break
+    else
+      people = people.reject do |person|
+        person['eye_color'] == input
+      end
+    end
+
+    puts
+  end
+
 end
 
 # Play game by uncommenting next line
@@ -385,9 +451,8 @@ end
 
 
 
-binding.pry
-puts 'done'
-
+# binding.pry
+# puts 'done'
 
 
 
