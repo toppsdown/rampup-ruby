@@ -91,7 +91,7 @@ print_hash(my_hash)
 
 # Exercise 3:
 #
-# Write a function that uses each to print the mapping
+# Write a method that uses each to print the mapping
 #
 
 def print_vending_menu(vending_mapping)
@@ -135,7 +135,7 @@ end
 # Exercise 4:
 #
 # I want one of each item, how much will it cost me?
-# Write a function that uses each to sum all the prices
+# Write a method that uses each to sum all the prices
 
 def sum_prices(price_mapping)
   # Your code here
@@ -328,7 +328,7 @@ noah = {
 
 # Exercise 9:
 #
-# Write a function that takes a person and a color and checks if
+# Write a method that takes a person and a color and checks if
 # The person has that eye color
 def has_eye_color?(person, color)
   # Your code here
@@ -354,7 +354,7 @@ end
 
 # Exercise 10:
 #
-# Write a function that takes a color and returns the list
+# Write a method that takes a color and returns the list
 # of people that don't have that eye color
 
 people = [

@@ -26,8 +26,8 @@
 # For reading through these things
 # 1) Open the file and it's test file
 # 2) Look at what class/module it's being defined under
-# 3) Look at the function names
-# 4) Look at the comments for the functions
+# 3) Look at the method names
+# 4) Look at the comments for the methods
 # 5) Look at the tests to see what it's doing
 # 6) Open IRB/Pry and try out the examples
 #

@@ -12,7 +12,8 @@
 #
 # each: the iterator method
 # do/end: the beginning of the 'block' of code
-# |number|: the variable that gets set to each number
+# |number|: the variable that gets set to each number.  This is very similar to
+#          method arguments
 
 [ 1, 2, 3, 4, 5 ].each do |number|
   puts number
@@ -76,12 +77,27 @@ end
 # 2 + 19 + 25 + 4 + 7
 #
 # In our heads, we would do:
-# sum = 2 + 19 (21)
-# sum = 21 + 25 (46)
-# sum = 46 + 4 (50)
-# sum = 50 + 7 (57)
+# 2 + 19 = 21
+# 21 + 25 = 46
+# 46 + 4 = 50
+# 50 + 7 = 57
 #
 # Answer is 57
+
+# In code we can do something similar
+#
+# Example:
+# 2 + 19 + 25 + 4 + 7
+#
+# sum = 0
+# sum = sum + 2  # sum equals 2
+# sum = sum + 19 # => sum equals 21
+# sum = sum + 25 # => sum equals 46
+# sum = sum + 4  # => sum equals 50
+# sum = sum + 7  # => sum equals 57
+#
+# sum now equals 57
+
 
 
 # Exercise: Sum the numbers
@@ -105,7 +121,7 @@ def sum_array(array)
   sum = 0
 
   array.each do |number|
-    sum += number
+    sum = sum + number
   end
 
   sum
@@ -114,7 +130,8 @@ end
 
 
 
-
+# X) Memoize with arrays
+#
 # Exercise: Double all numbers
 #
 # Write a method that:
@@ -145,7 +162,8 @@ end
 
 
 
-
+# X) Memoize: Filtering values from an array
+#
 # Exercise: Select all even numbers
 #
 # Write a method that:
@@ -178,6 +196,7 @@ end
 # /Answer
 
 
+# X) Iterators: answering a question
 
 # Exercise 6: rewrite the include? method
 #
@@ -188,7 +207,7 @@ end
 # 4) if array includes thing, set the variable to true
 # 5) returns the answer variable
 
-def array_includes?(array, given_thing)
+def array_includes?(array, thing_to_check)
   # Your code here
 end
 
@@ -197,11 +216,11 @@ puts array_includes?([1,5,7], 5).to_s # => should return true
 puts array_includes?([1,5,7], 'hello').to_s # => should return false
 
 # Answer
-def array_includes?(array, given_thing)
+def array_includes?(array, thing_to_check)
   answer = false
 
   array.each do |thing|
-    if thing == given_thing
+    if thing == thing_to_check
       answer = true
     end
   end
@@ -212,7 +231,8 @@ end
 
 
 
-
+# X) Iterators:
+#
 # Exercise 7: reject a thing from an array
 #
 # Write a method that:

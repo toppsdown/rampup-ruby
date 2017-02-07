@@ -76,7 +76,7 @@ Person.new('Bobby') # => Prints "You gave me the name: Bobby"
 # How do we save data to an instance?
 # We save attributes using instance variables.
 # Instance variables store information and can
-#   be used by other functions in the class
+#   be used by other methods in the class
 class Person
   def initialize(name)
     @name = name  # => '@' means it's an instance variable
@@ -95,17 +95,17 @@ bobby.print_name # => Prints 'My name is Bobby'
 
 
 
-# Getters: functions that return an attribute from an instance
+# Getters: methods that return an attribute from an instance
 
 # No one other than the instance can get the instance variable so
-# we have to define a "getter" function to access it
+# we have to define a "getter" method to access it
 
 # This will break with NoMethodError
 #
 # me = Person.new('Tim')
 # me.name
 
-# Exercise 1: Write a function that returns the name of the person
+# Exercise 1: Write a method that returns the name of the person
 class Person
 
   def initialize(name)
@@ -165,7 +165,7 @@ check_test(sam.name, 'Sam')
 
 
 
-# Setters: functions that set attributes on an instance
+# Setters: methods that set attributes on an instance
 
 # Just like with getters, no one can set the @name instance variable
 # unless we define a method that allows them to
@@ -175,7 +175,7 @@ check_test(sam.name, 'Sam')
 # me = Persone.new('Tim')
 # me.name = 'Timothy'
 
-# Exercise 2: Write a function that sets the @name variable to something different
+# Exercise 2: Write a method that sets the @name variable to something different
 class Person
 
   def name=(new_name)

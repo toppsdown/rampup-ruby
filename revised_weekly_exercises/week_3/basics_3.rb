@@ -28,9 +28,11 @@ puts 'hello'
 
 # X) Methods: defining arguments
 #
-# To create an argument, we add it to the function definition.
+# To create an argument, we add it to the method definition.
 # Arguments are used to pass information into the method.
-# The argument name is like a variable
+# The argument name is like a variable that is set when the
+# Method is called
+
 
 # my_method is the method name
 # arg_1 is a placeholder for the first argument
@@ -127,7 +129,12 @@ changeable_array[-1] = 'yep' # Changes 'yes' (in the last index) to 'yep'
 misspelled_words = [ 'tihs', 'werd', 'iz', 'mispeld' ]
 
 
-
+# Answer
+misspelled_words[0] = 'this'
+misspelled_words[1] = 'word'
+misspelled_words[2] = 'is'
+misspelled_words[3] = 'mispeld'
+# /Answer
 
 
 
@@ -366,19 +373,23 @@ end
 #
 # Abstraction makes something less literal
 #
-# When we name a person, the name is an abstraction for the person.
-# When we create a variable, the variable name is an abstraction of the value.
-# When we create a method, the method is an abstraction of all the code inside of it
+# Example:
+#
+# - When we name a person in real life, the name is an abstraction for the person.
+# - When we create a variable, the variable name is an abstraction of the value.
+# - When we create a method, the method name is an abstraction of all the code inside of it
 
 # In the print row method, we repeated the following code.  The only thing that changed
 # was the value we were checking.  We can abstract it to a method instead
 
-
+# Code:
+#
 # if board[index] != nil
 #   print board[index]
 # else
 #   print ' '
 # end
+
 
 # Exercise: Abstract to a method
 #
