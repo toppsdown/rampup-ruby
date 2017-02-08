@@ -1,13 +1,14 @@
-# Ignore this, just for testing purposes
-def check_test(actual, expect)
-  status = expect == actual ? 'Pass' : 'Fail'
-  puts "#{status}, Expected: #{expect}, Actual: #{actual}"
-end
-
+# X) Hashes: Key/Value pairs
 
 # Hash is a mapping from a key to a value
-# For example, a vending machine maps a location code to the food in
-# that slot:
+#
+# Example:
+#
+# a vending machine maps a location code to
+# the food in that slot:
+#
+# Note: This is called a "Hash Rocket": =>
+
 vending_machine = {
   'A1' => 'Doritos',
   'A2' => 'Cool Ranch Doritos',
@@ -15,9 +16,12 @@ vending_machine = {
   'B2' => 'Snickers'
 }
 
-# Exercise 1:
-# Create a hash that maps the ids first row of to the food in that spot
+# Exercise:
+# Go to this website:
 # http://media.oregonlive.com/myoregon/photo/swjunk27474rj-2473099jpg-1e3dd5c7fe85e7c2.jpg
+#
+# 1) Look at the first row of items
+# 2) Create a hash that maps the ids to their food items
 
 # Location  Name
 # D0        Pop Tarts - Smores
@@ -42,27 +46,37 @@ vending_machine = {
 # /Answer
 
 
+# X) Hashes: Looking up a value
+#
 # To access values in the hash, we use it's key:
-# What does: vending_machine['D8'] return?
+#
+# Example:
+#
+vending_machine['D8'] # => returns "Reese's Pieces"
 
-# Exercise 2: Use ruby to get me a smores pop tarts.  What key do I need?
 
+# Exercise:
+#
+# Use ruby to get me a smores pop tarts.  What key do I need?
 
 # Answer
 vending_machine['D0']
 # /Answer
 
 
-# Iterating over hashes:
-
-# Remember that iterating over arrays give us one item
+# X) Hashes: Iterating over keys and values
+#
+# Refresher on array iteration:
+#
 # my_array.each do |item|
-  # do something with item
+#   do something with item
 # end
-
-# When using each on hashes, we get two items
+#
+#
+# Hash iteration gives us two block arguments instead of one
+#
 # my_hash.each do |key, value|
-  # do something with key and value
+#   do something with key and value
 # end
 
 
@@ -87,12 +101,11 @@ print_hash(my_hash)
 
 
 
-
-
-# Exercise 3:
+# Exercise: Print the vending machine mapping
 #
-# Write a method that uses each to print the mapping
-#
+# Write a method that:
+# 1) Iterates over each key/value pair
+# 2) prints them in the format: "Location: #{item_location}, Name: #{item_name}"
 
 def print_vending_menu(vending_mapping)
   # your code here
@@ -100,7 +113,7 @@ end
 
 
 # Test
-vending_machine = {
+vending_machine_2 = {
 'D0' => "Pop Tarts - Smores",
 'D2' => "Pop Tarts - Strawberry",
 'D4' => "Pop Tarts - Strawberry",
@@ -108,9 +121,8 @@ vending_machine = {
 'D8' => "Reese's Pieces"
 }
 
-
-print_vending_menu(vending_machine)
-
+# print_vending_menu(vending_machine_2)
+#
 # Should print:
 #
 # Location: D0, Name: Pop Tarts - Smores
@@ -118,8 +130,6 @@ print_vending_menu(vending_machine)
 # Location: D4, Name: Pop Tarts - Strawberry
 # Location: D6, Name: Rice Crispy Treats
 # Location: D8, Name: Reese's Pieces
-
-
 
 
 # Answer
@@ -132,10 +142,12 @@ end
 
 
 
-# Exercise 4:
+# Exercise: Sum prices in a hash
 #
-# I want one of each item, how much will it cost me?
-# Write a method that uses each to sum all the prices
+# Write a method that:
+# 1) Iterates through the vending machine mappings
+# 2) Sums the prices of all the items
+# 3) Returns the sum
 
 def sum_prices(price_mapping)
   # Your code here
@@ -149,7 +161,7 @@ prices = {
   "Reese's Pieces" => 1.25
 }
 
-check_test(sum_prices(prices), 4) # should return $4
+sum_prices(prices) # should return 4
 
 
 # Answer
@@ -160,20 +172,36 @@ def sum_prices(price_mapping)
     sum += price
   end
 
-  return sum
+  sum
 end
 # /Answer
 
 
 
-# Nested hashes
-vending_machine = {
+# X) Nested hashes: The russian doll of code
+#
+# Hashes can use any data as the key or the value
+# This means that a hash key can map to another hash
+
+# Example:
+#
+# Vending machines actually have 3 parts of data:
+#
+# 1) Location: The key code that you enter and maps to the item
+# 2) Item name: The name of the item in that location
+# 3) Price: The price to charge the buyer
+#
+# We can map this data using nested hashes:
+nested_vending_machine_example = {
   'A1' => { 'name' => 'Doritos', 'price' => 0.75 },
   'A2' => { 'name' => 'Cool Ranch Doritos', 'price' => 1.00 }
 }
 
 
-# Exercise 5:
+# Exercise: Write your own nested hash
+#
+# Use the same image as above:
+# http://media.oregonlive.com/myoregon/photo/swjunk27474rj-2473099jpg-1e3dd5c7fe85e7c2.jpg
 #
 # Now change the hash to include the cost
 # Location  Name                    Price
@@ -183,8 +211,12 @@ vending_machine = {
 # D6        Rice Crispy Treats      0.75
 # D8        Reese's Pieces          1.25
 
+nested_vending_machine_answer = {
+  # your key/values here
+}
+
 # Answer
-vending_machine = {
+nested_vending_machine_answer = {
   'D0' => {
     'name' => "Pop Tarts - Smores",
     'price' => 1.00
@@ -208,20 +240,74 @@ vending_machine = {
 }
 # /Answer
 
-# Exercise 6:
-# I want a smores pop tart and reeses pieces
-# What keys do I need?
-# What keys do I need to get the prices?
+
+
+
+
+
+# X) Nested Hashes: How do I get the data back out?
+#
+# With single level hashes, we only needed a single key
+# With nested hashes, we need multiple keys
+#
+# Example:
+#
+nested_vending_machine_example['A1']['name'] # => returns 'Doritos'
+
+# Exercise:  Use keys to get the values we want
+#
+# Using your nested hash above:
+# 1) What keys do I need to get the price of smores pop tarts?
+# 2) What keys do I need to get the price of reeses pieces?
 
 # Answer
-['D0', 'D8']
-vending_machine['D0']['price']
-vending_machine['D8']['price']
+nested_vending_machine_answer['D0']['price']
+nested_vending_machine_answer['D8']['price']
 # /Answer
 
 
 
-# Exercise 7:
+
+
+
+
+# X) Iterating over nested hashes
+#
+# When you iterate over nested hashes, the value is the
+# lower level hash
+#
+# my_nested_hash.each do |key, value|
+#   value here is ANOTHER HASH
+# end
+#
+# Example:
+
+nested_iterator_hash = {
+  'D0' => {
+    'name' => "Pop Tarts - Smores",
+    'price' => 1.00
+  },
+  'D2' => {
+    'name' => "Pop Tarts - Strawberry",
+    'price' => 1.00
+  }
+}
+
+nested_iterator_hash.each do |key, nested_hash|
+  # For the first iteration:
+  key # => 'D0'
+  nested_hash['name'] # => 'Pop Tarts - Smores'
+  nested_hash['price'] # => 1.00
+end
+
+
+# Exercise: Add up the prices in a nested hash
+#
+# Write a method that:
+# 1) iterates over the nested hash
+# 2) sums the prices of all items
+# 3) returns the sum
+
 # Use each to add up and return the price
 def sum_prices(vending_mapping)
   # your code here
@@ -251,7 +337,7 @@ vending_machine = {
   }
 }
 
-check_test(sum_prices(vending_machine), 5.0) # Should return $5.00
+sum_prices(vending_machine) # Should return $5.00
 
 
 # Answer
@@ -262,20 +348,25 @@ def sum_prices(vending_mapping)
     sum += food_item['price']
   end
 
-  return sum
+  sum
 end
 # /Answer
 
 
-
-
-# Hash that represents a person
+# X) Hashes: Making a person
+#
+# We can use hashes to represent more complicated real life
+# data structures
+#
+# Example:
+#
+# Hash: represents a person
 person = {
   'name' => 'Tom Thompson',
   'age' => 27
 }
 
-# Nested hash
+# Nested hash: represents more complicated data about a person
 person = {
   'name' => 'Tom Thompson',
   'age' => 27,
@@ -284,40 +375,52 @@ person = {
     'street' => 'Fake St.',
     'city' => 'Boston',
     'state' => 'Massachusetts',
-    'zip_code' => '02120'
+    'zip_code' => '12345'
   }
 }
 
 
-# Exercise 8:
+# Exercise:
 #
-# Create a hash that represents you as a person
-# Include your name, age, favorite food
+# 1) Create a hash that represents you as a person
+# 2) Include your name, age, favorite food
 me = {
 
 }
 
 
-# Explanation: how to add to a hash
+
+# X) Hashes: editing a hash after it's creation
 #
+# Hashes can be changed after creation by using the key and =
+#
+# Example:
 maura = {
   'name' => 'Maura',
   'eye_color' => 'blue'
 }
 
-maura['age'] = 27  # sets
+maura['age'] = 27  # sets a new key/value pair
+maura['eye_color'] = 'green' # overwrites an existing key
 
-# Exercise 9:
+# Exercise:
 #
-# Add more information to your representation
-# Add your eye color, hair color, and whether you wear glasses
+# Add more information to your representation:
+# 1) Add your eye color
+# 2) Add your hair color
 
 # Answer
 me['eye_color'] = 'Hazel'
 me['hair_color'] = 'Brown'
-me['glasses?'] = true
 # /Answer
 
+
+
+
+
+
+
+# X)
 
 # Now let's make a guess who game
 

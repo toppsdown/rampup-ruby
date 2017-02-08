@@ -13,7 +13,7 @@
 # each: the iterator method
 # do/end: the beginning of the 'block' of code
 # |number|: the variable that gets set to each number.  This is very similar to
-#          method arguments
+#          method arguments and can be named anything you want
 
 [ 1, 2, 3, 4, 5 ].each do |number|
   puts number
@@ -271,7 +271,19 @@ end
 
 
 # X) Name guessing game
-
+#
+# Write a method that:
+#
+# 1) creates a list of names
+# 2) chooses a random name from the list
+# 3) starts a game loop
+#   4) Tells user what names they can choose from
+#   5) Asks user for input
+#   6) Gets user input
+#   7) If user guessed the right name, break the loop
+#   8) If user guessed the wrong name, reject that name from the available list
+#   9) repeat
+#
 # Game:
 # Computer chooses a name from a list
 #
